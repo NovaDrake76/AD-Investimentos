@@ -6,8 +6,7 @@ const Navbar = () => {
       <div className="flex justify-between w-full max-w-7xl">
         <div className="text-lg font-semibold">AD Investimentos</div>
         <div className="flex gap-3">
-          <div>Home</div>
-          <div>Contato</div>
+          <a href="#contatos">Contato</a>
         </div>
       </div>
     </nav>
