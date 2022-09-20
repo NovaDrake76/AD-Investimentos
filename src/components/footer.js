@@ -1,13 +1,13 @@
-import React from "react"
-import { MdOutlineMailOutline } from "react-icons/md"
-import { AiOutlineWhatsApp } from "react-icons/ai"
-import Logo from "../images/AD.png"
+import React from "react";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import Logo from "../images/AD.webp";
 
 const Footer = () => {
   return (
     <footer className="flex w-screen p-8 border-t-4 border-[#202737] bg-[#0D131D] justify-center text-white">
-      <div className="flex flex-col justify-between items-start w-full max-w-7xl gap-3">
-        <div className="flex w-full justify-between">
+      <div className="flex flex-col items-start justify-between w-full gap-3 max-w-7xl">
+        <div className="flex justify-between w-full">
           <div className="flex flex-col gap-1">
             <div className="text-lg font-semibold text-start">
               AD Investimentos
@@ -15,13 +15,13 @@ const Footer = () => {
             <span className="text-start">
               AV. CAPITÃO OLINTO MANCINI, 878 - CENTRO, TRÊS LAGOAS - MS
             </span>
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <AiOutlineWhatsApp />
               <a href="mailto:ALVARO@ADINVESTIMENTOS.COM.BR">
                 alvaro@adinvestimentos.com.br
               </a>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <MdOutlineMailOutline />
               <a href="https://api.whatsapp.com/send?phone=5567993466245">
                 <span>+55 (67) 99346-6245</span>
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
           <img src={Logo} alt="Logo AD Investimentos" className="w-20 h-20" />
         </div>
-        <p className="text-start text-sm mt-5">
+        <p className="mt-5 text-sm text-start">
           A AD Investimentos é uma empresa de agentes autônomos de investimento
           devidamente registrada na comissão de valores mobiliários (CVM), na
           forma da instrução normativa nº 497/11. Atua no mercado financeiro
@@ -45,12 +45,12 @@ const Footer = () => {
           0800-704-0418. Todos os direitos reservados.
         </p>
 
-        <div className="flex w-full justify-center">
+        <div className="flex justify-center w-full">
           © 2022 AD INVESTIMENTOS. TODOS OS DIREITOS RESERVADOS
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

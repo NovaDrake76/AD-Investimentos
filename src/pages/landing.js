@@ -1,176 +1,33 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import Mountain from "../images/mountain.webp";
-import MountainMobile from "../images/mountainMobile.webp";
-import Equip from "../images/equip.webp";
-import EquipMobile from "../images/equipMobile.webp";
-import Office from "../images/office.webp";
-import OfficeMobile from "../images/officeMobile.webp";
 import MountainBack from "../images/backMountain.webp";
 import MountainBackMobile from "../images/backMountainMobile.webp";
-import Card1 from "../images/card1.webp";
-import Card2 from "../images/card2.webp";
+
 import History from "../images/history.webp";
-import Alvaro from "../images/alvaro.webp";
-import { FaMedal, FaUserGraduate, FaHandshake } from "react-icons/fa";
-import { MdSecurity, MdTimeline, MdOutlineMailOutline } from "react-icons/md";
-import { IoRocketSharp } from "react-icons/io5";
-import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import Zap from "../images/zap.webp";
+
 import { AiOutlineWhatsApp } from "react-icons/ai";
-import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
+
+import {
+  advantages,
+  cards,
+  about,
+  contacts,
+  advisors,
+  messages,
+  carouselImages,
+} from "./landingInfo";
 
 let renderCarouselImages,
   renderAdvantages,
   renderCards,
   renderAboutUs,
   renderAdvisors,
+  renderMessages,
   renderContact;
 
 const Landing = () => {
-  const carouselImages = [
-    {
-      image: Mountain,
-      imageMobile: MountainMobile,
-      content: (
-        <div className="flex flex-col w-3/4 gap-4">
-          <span className="flex text-xl md:text-5xl text-white font-extralight font-['Raleway']">
-            AD INVESTIMENTOS
-          </span>
-          <h1 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white text-start leading-tight">
-            INVESTIR NAS MELHORES OPÇÕES DO MERCADO?
-            <span className="text-adblue"> AQUI VOCÊ PODE.</span>
-          </h1>
-        </div>
-      ),
-    },
-    {
-      image: Equip,
-      imageMobile: EquipMobile,
-      content: (
-        <div className="flex flex-col items-center w-4/5 gap-4">
-          <span className="flex text-xl md:text-5xl text-white font-extralight font-['Raleway']">
-            AD INVESTIMENTOS
-          </span>
-          <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
-            INVISTA COM ASSESSORES QUE SÃO ESPECIALISTAS EM INVESTIMENTOS.
-            <span className="text-adblue"> SEM CUSTO.</span>
-          </h2>
-        </div>
-      ),
-    },
-    {
-      image: Office,
-      imageMobile: OfficeMobile,
-      content: (
-        <div className="flex flex-col items-center w-4/5 gap-4">
-          <h2 className="flex flex-col gap-10 text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight text-start">
-            NÓS ANALISAMOS INVESTIMENTOS TODOS OS DIAS PARA TE ENTREGAR APENAS
-            <span className="text-adblue"> O MELHOR.</span>
-          </h2>
-        </div>
-      ),
-    },
-  ];
-
-  const advantages = [
-    {
-      name: "Qualidade",
-      description:
-        "Invista nas melhores oportunidades de todo o mercado, com a confiança e expertise de uma equipe que está há anos cuidando do dinheiro de milhares de clientes.",
-      icon: FaMedal,
-    },
-    {
-      name: "Segurança",
-      description:
-        "Somos representantes autorizados pela Guide Investimentos - uma das maiores e melhores corretoras de investimentos do país. Nós prezamos pela transparência, honestidade e confiança em nossas relações.",
-      icon: MdSecurity,
-    },
-    {
-      name: "Competência",
-      description:
-        "Possuímos mais de 5 anos de experiência no mercado financeiro. Nossos assessores são especialistas em investimentos (CEA), com carreiras consolidadas em grandes bancos comerciais e de investimentos.",
-      icon: FaUserGraduate,
-    },
-    {
-      name: "Velocidade",
-      description:
-        "Seu especialista estará constantemente analisando o mercado, sugerindo ajustes que precisam ser feitos para acompanhar as melhores oportunidades do mercado.",
-      icon: IoRocketSharp,
-    },
-  ];
-
-  const cards = [
-    {
-      name: "Análise das Aplicações ",
-      description:
-        "Analise suas aplicações em outros bancos sem custo, e descubra se é possível melhorar seus resultados.",
-      image: Card1,
-    },
-    {
-      name: "Assessoria de Investimentos",
-      description:
-        "Acompanhamento de investimentos, planejamento financeiro e muito mais.",
-      image: Card2,
-    },
-  ];
-
-  const about = [
-    {
-      Number: "5",
-      Description: "Anos de experiência",
-      Icon: MdTimeline,
-    },
-    {
-      Number: "500",
-      Description: "Clientes investidores atendidos em bancos",
-      Icon: FaHandshake,
-    },
-    {
-      Number: "300",
-      Description:
-        "Milhões de reais acessorados em bancos comerciais e de investimentos",
-      Icon: RiMoneyDollarCircleLine,
-    },
-  ];
-
-  const contacts = [
-    {
-      name: "WhatsApp",
-      icon: AiOutlineWhatsApp,
-      link: "https://api.whatsapp.com/send?phone=5567993466245",
-    },
-    {
-      name: "Email",
-      icon: MdOutlineMailOutline,
-      link: "mailto: alvaro@adinvestimentos.com.br",
-    },
-    {
-      name: "LinkedIn",
-      icon: BsLinkedin,
-      link: "https://www.linkedin.com/in/ad-investimentos-9b51bb249/",
-    },
-    {
-      name: "Facebook",
-      icon: BsFacebook,
-      link: "https://www.facebook.com/Adinvestimentos.oficial",
-    },
-    {
-      name: "Instagram",
-      icon: BsInstagram,
-      link: "https://www.instagram.com/adinvestimentos.oficial/",
-    },
-  ];
-
-  const advisors = [
-    {
-      name: "Álvaro Dias",
-      image: Alvaro,
-      description:
-        "CEO e fundador da AD Investimentos, com mais de 5 anos de experiência no mercado financeiro. Possui formação em Administração de Empresas pela Universidade Federal de Minas Gerais (UFMG) e é CEA (Certificado de Especialista em Assessoria de Investimentos) pela ANBIMA.",
-    },
-  ];
-
   renderAdvantages = advantages.map((advantage, index) => {
     return (
       <div
@@ -288,6 +145,35 @@ const Landing = () => {
     );
   });
 
+  renderMessages = messages.map((message, index) => {
+    return (
+      <div
+        className="flex max-w-lg p-5 rounded bg-white/80 text-start"
+        key={index}
+      >
+        <div className="flex flex-col w-full gap-2">
+          <div className="flex items-center justify-between gap-2 text-3xl">
+            <div className="flex gap-2">
+              <AiOutlineWhatsApp />
+              <span className="text-lg font-['Raleway'] text-[#4c4c4c]">
+                Whatsapp
+              </span>
+            </div>
+            <span className="text-sm font-['Raleway'] text-[#4c4c4c]">
+              {message.time}
+            </span>
+          </div>
+          <div className="flex flex-col">
+            <span>Letícia - AD Investimentos</span>
+            <span className="text-lg font-['Raleway'] text-[#353535]">
+              {message.text}
+            </span>
+          </div>
+        </div>
+      </div>
+    );
+  });
+
   function renderOurTitle(our, title) {
     return (
       <div className="flex flex-col px-5 border-l-2 border-adblue text-start ">
@@ -327,6 +213,29 @@ const Landing = () => {
             para melhor atendê-los. Venha tomar um café conosco e analisar suas
             aplicações. Qualidade garantida!
           </p>
+        </div>
+      </div>
+      <div className="flex justify-center ">
+        <div className="absolute flex flex-col gap-4 p-4 md:gap-14">
+          <div className="flex flex-col items-start max-w-4xl gap-4 h-2/4 mt-14">
+            <h2 className="text-2xl md:text-[52px] font-bold font-['Oswald'] text-white leading-tight text-start">
+              <span>ACOMPANHAMENTO DOS SEUS INVESTIMENTOS</span>
+              <span className="text-adblue"> DIRETAMENTE POR WHATSAPP.</span>
+            </h2>
+            <div className="flex flex-col justify-start gap-2">
+              {renderMessages}
+            </div>
+          </div>
+        </div>
+        <img
+          src={Zap}
+          alt="man in cellphone"
+          className="min-h-[650px] md:h-[550px] object-cover w-full"
+        />
+      </div>
+
+      <div className="flex justify-center mt-20">
+        <div className="flex flex-col w-full max-w-6xl gap-20">
           {renderOurTitle("CONTE", "CONOSCO")}
           <div className="flex ">
             <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-3xl px-5">
@@ -376,7 +285,7 @@ const Landing = () => {
             {renderOurTitle("NOSSOS", "ACESSORES")}
             <div className="flex gap-5 "></div>
           </div>
-          <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
+          <div className="flex flex-col items-center justify-center gap-4 p-4 md:flex-row">
             {renderAdvisors}
           </div>
         </div>
