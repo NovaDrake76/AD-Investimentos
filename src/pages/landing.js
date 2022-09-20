@@ -175,7 +175,7 @@ const Landing = () => {
     return (
       <div
         key={index}
-        className="flex flex-col items-center gap-4 p-4  text-[#4D4D4D] hover:text-adblue hover:border-adblue md:border-white border-[1px] transition-all duration-500"
+        className="flex flex-col items-center gap-4 p-4  text-[#4D4D4D] hover:text-adblue hover:border-adblue md:border-white md:border-[1px] transition-all duration-500"
       >
         <div className="flex items-center justify-center w-20 h-20">
           <advantage.icon className="text-5xl " />
@@ -367,7 +367,7 @@ const Landing = () => {
           sizes="(max-width: 500px) 500px, 1000px"
           src={MountainBack}
           alt="mountain background"
-          className="h-[550px] object-cover"
+          className="h-[850px] md:h-[550px] object-cover"
         />
       </div>
       <div className="flex justify-center mt-20 ">
@@ -395,7 +395,7 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center mb-10 md:flex-row gap-15 md:gap-20">
+          <div className="flex flex-col items-center justify-center gap-5 mb-10 md:flex-row md:gap-20">
             {renderContact}
           </div>
         </div>
@@ -407,13 +407,13 @@ const Landing = () => {
             "linear-gradient(to right, rgba(126, 9, 235, 0.8) 0%, rgba(114, 17, 215, 0.8) 17%, #373873 100%",
         }}
       >
-        <div className="flex justify-between w-full max-w-6xl">
+        <div className="flex flex-col items-center justify-between w-full max-w-6xl gap-2 md:flex-row">
           <div className="flex flex-col text-white text-start">
-            <h3 className="font-['Raleway'] font-medium  text-lg">
+            <h3 className="font-['Raleway'] font-medium  md:text-lg">
               Pare de esperar
             </h3>
 
-            <h3 className="font-['Raleway']  text-3xl">
+            <h3 className="font-['Raleway']  text-lg md:text-3xl">
               Aplique seu dinheiro conosco agora mesmo!
             </h3>
           </div>
