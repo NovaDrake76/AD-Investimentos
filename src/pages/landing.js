@@ -163,7 +163,7 @@ const Landing = () => {
     return (
       <div
         key={index}
-        className="flex flex-col items-center gap-4 p-4  text-[#4D4D4D] hover:text-adblue hover:border-adblue border-white border-[1px] transition-all duration-500"
+        className="flex flex-col items-center gap-4 p-4  text-[#4D4D4D] hover:text-adblue hover:border-adblue md:border-white border-[1px] transition-all duration-500"
       >
         <div className="flex items-center justify-center w-20 h-20">
           <advantage.icon className="text-5xl " />
