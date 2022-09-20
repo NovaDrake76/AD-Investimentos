@@ -16,10 +16,10 @@ const Landing = () => {
       image: Mountain,
       content: (
         <div className="flex flex-col w-3/4 gap-4">
-          <span className="flex text-5xl text-white font-extralight font-['Raleway']">
+          <span className="flex text-xl md:text-5xl text-white font-extralight font-['Raleway']">
             AD INVESTIMENTOS
           </span>
-          <div className="text-[64px] font-bold font-['Oswald'] text-white text-start leading-tight">
+          <div className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white text-start leading-tight">
             INVESTIR NAS MELHORES OPÇÕES DO MERCADO?
             <span className="text-adblue"> AQUI VOCÊ PODE.</span>
           </div>
@@ -30,10 +30,10 @@ const Landing = () => {
       image: Equip,
       content: (
         <div className="flex flex-col w-4/5 items-center gap-4">
-          <span className="flex text-5xl text-white font-extralight font-['Raleway']">
+          <span className="flex text-xl md:text-5xl text-white font-extralight font-['Raleway']">
             AD INVESTIMENTOS
           </span>
-          <div className="text-[64px] font-bold font-['Oswald'] text-white leading-tight">
+          <div className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
             INVISTA COM ACESSORES EM INVESTIMENTOS QUE SÃO ESPECIALISTAS.
             <span className="text-adblue"> SEM CUSTO.</span>
           </div>
@@ -44,7 +44,7 @@ const Landing = () => {
       image: Office,
       content: (
         <div className="flex flex-col w-4/5 items-center gap-4">
-          <div className="flex flex-col gap-10 text-[64px] font-bold font-['Oswald'] text-white leading-tight text-start">
+          <div className="flex flex-col gap-10 text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight text-start">
             NÓS ANALISAMOS INVESTIMENTOS TODOS OS DIAS PARA TE ENTREGAR APENAS
             <span className="text-adblue"> O MELHOR.</span>
           </div>
@@ -84,7 +84,7 @@ const Landing = () => {
     return (
       <div
         key={index}
-        className="flex flex-col items-center gap-4 p-4 min-w-[300px] text-[#4D4D4D] hover:text-adblue hover:border-adblue border-white border-[1px] transition-all duration-500"
+        className="flex flex-col items-center gap-4 p-4  text-[#4D4D4D] hover:text-adblue hover:border-adblue border-white border-[1px] transition-all duration-500"
       >
         <div className="flex items-center justify-center w-20 h-20 rounded-full ">
           <advantage.icon className="text-5xl " />
@@ -138,7 +138,9 @@ const Landing = () => {
               VANTAGENS
             </span>
           </div>
-          <div className="flex gap-9 justify-center">{renderAdvantages}</div>
+          <div className="flex flex-col md:flex-row gap-9 justify-center">
+            {renderAdvantages}
+          </div>
         </div>
       </div>
     </div>
