@@ -36,7 +36,7 @@ export const advantages = [
   {
     name: "Velocidade",
     description:
-      "Seu especialista estará constantemente analisando o mercado, sugerindo ajustes que precisam ser feitos para acompanhar as melhores oportunidades do mercado.",
+      "Seu especialista estará constantemente analisando o mercado, sugerindo ajustes que precisam ser feitos para caanhar as melhores oportunidades do mercado.",
     icon: IoRocketSharp,
   },
 ];
@@ -51,7 +51,7 @@ export const cards = [
   {
     name: "Assessoria de Investimentos",
     description:
-      "Acompanhamento de investimentos, planejamento financeiro e muito mais.",
+      "Recomendação das melhores aplicações do mercado, visando melhorar os resultados e ajudar os clientes a ganharem mais.",
     image: Card2,
   },
 ];
@@ -108,7 +108,7 @@ export const advisors = [
     name: "Álvaro Dias",
     image: Alvaro,
     description:
-      "Especialista/assessor de investimentos, formado em ciências contábeis, pós-graduado em administração de empresas. Trabalhei em banco de investimentos e em banco comercial-público alta renda, atualmente proprietário da AD Investimentos na cidade de Três Lagoas-MS.",
+      "Assessor de investimentos com mais de 5 anos trabalhando no mercado financeiro. Formado em Ciências Contábeis. Pós graduado em Administração de Empresas. Trabalhou em bancos comerciais e bancos de investimento, atendendo o público alta renda. Atualmente proprietário da AD Investimentos na cidade de Três Lagoas-MS.",
   },
 ];
 
@@ -128,14 +128,14 @@ export const carouselImages = [
     image: Mountain,
     imageMobile: MountainMobile,
     content: (
-      <div className="flex flex-col w-3/4 gap-4">
-        <span className="flex text-xl md:text-5xl text-white font-extralight font-['Raleway']">
+      <div className="flex flex-col items-center w-4/5 gap-4">
+        <span className="flex text-xl md:text-5xl text-white font-extralight  font-['Raleway']">
           AD INVESTIMENTOS
         </span>
-        <h1 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white text-start leading-tight">
+        <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
           INVESTIR NAS MELHORES OPÇÕES DO MERCADO?
           <span className="text-adblue"> AQUI VOCÊ PODE.</span>
-        </h1>
+        </h2>
       </div>
     ),
   },
@@ -144,7 +144,7 @@ export const carouselImages = [
     imageMobile: EquipMobile,
     content: (
       <div className="flex flex-col items-center w-4/5 gap-4">
-        <span className="flex text-xl md:text-5xl text-white font-extralight font-['Raleway']">
+        <span className="flex text-xl md:text-5xl text-white font-extralight text-start font-['Raleway']">
           AD INVESTIMENTOS
         </span>
         <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
@@ -159,6 +159,9 @@ export const carouselImages = [
     imageMobile: OfficeMobile,
     content: (
       <div className="flex flex-col items-center w-4/5 gap-4">
+        <span className="flex text-xl md:text-5xl text-white font-extralight text-start font-['Raleway']">
+          AD INVESTIMENTOS
+        </span>
         <h2 className="flex flex-col gap-10 text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight text-start">
           NÓS ANALISAMOS INVESTIMENTOS TODOS OS DIAS PARA TE ENTREGAR APENAS
           <span className="text-adblue"> O MELHOR.</span>

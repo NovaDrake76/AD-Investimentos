@@ -194,7 +194,7 @@ const Landing = () => {
         showArrows={false}
         infiniteLoop={true}
         showThumbs={false}
-        className="border-b-8 border-adblue"
+        className="flex border-b-8 border-adblue"
       >
         {renderCarouselImages}
       </Carousel>
