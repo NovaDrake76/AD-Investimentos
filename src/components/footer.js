@@ -1,7 +1,8 @@
-import React from "react";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import Logo from "../images/AD.webp";
+import React from "react"
+import { MdOutlineMailOutline } from "react-icons/md"
+import { AiOutlineWhatsApp } from "react-icons/ai"
+import Logo from "../images/logo2.webp"
+import Guide from "../images/guide.webp"
 
 const Footer = () => {
   return (
@@ -28,14 +29,25 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <img src={Logo} alt="Logo AD Investimentos" className="w-20 h-20" />
+          <div className="flex flex-col gap-4 md:flex-row">
+            <img
+              src={Logo}
+              alt="Logo AD Investimentos"
+              className="object-contain w-20 h-20"
+            />
+            <img
+              src={Guide}
+              alt="Logo Guide"
+              className="object-contain w-20 h-20"
+            />
+          </div>
         </div>
         <p className="mt-5 text-sm text-start">
           A AD Investimentos é uma empresa de agentes autônomos de investimento
           devidamente registrada na comissão de valores mobiliários (CVM), na
           forma da instrução normativa nº 497/11. Atua no mercado financeiro
           credenciada à Guide Investimentos SA, o que pode ser verificado
-          através do site da CVM www.cvm.gov.br). O investimento em ações é um
+          através do site da CVM (www.cvm.gov.br). O investimento em ações é um
           investimento de risco e rentabilidade passada não é garantia de
           rentabilidade futura. Na realização de operações com derivativos
           existe a possibilidade de perdas dos valores investidos, podendo
@@ -50,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

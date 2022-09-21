@@ -1,7 +1,7 @@
 import "./App.css"
 import Navbar from "./components/navbar"
 import Footer from "./components/footer"
-import Landing from "./pages/landing"
+import Landing from "./pages/landing/landing"
 
 function App() {
   return (

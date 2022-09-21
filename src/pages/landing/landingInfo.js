@@ -1,18 +1,18 @@
-import { FaMedal, FaUserGraduate, FaHandshake } from "react-icons/fa";
-import { MdSecurity, MdTimeline, MdOutlineMailOutline } from "react-icons/md";
-import { IoRocketSharp } from "react-icons/io5";
-import { RiMoneyDollarCircleLine } from "react-icons/ri";
-import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import Card1 from "../images/card1.webp";
-import Card2 from "../images/card2.webp";
-import Alvaro from "../images/alvaro.webp";
-import Mountain from "../images/mountain.webp";
-import MountainMobile from "../images/mountainMobile.webp";
-import Equip from "../images/equip.webp";
-import EquipMobile from "../images/equipMobile.webp";
-import Office from "../images/office.webp";
-import OfficeMobile from "../images/officeMobile.webp";
+import { FaMedal, FaUserGraduate, FaHandshake } from "react-icons/fa"
+import { MdSecurity, MdTimeline, MdOutlineMailOutline } from "react-icons/md"
+import { IoRocketSharp } from "react-icons/io5"
+import { RiMoneyDollarCircleLine } from "react-icons/ri"
+import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs"
+import { AiOutlineWhatsApp } from "react-icons/ai"
+import Card1 from "../../images/card1.webp"
+import Card2 from "../../images/card2.webp"
+import Alvaro from "../../images/alvaro.webp"
+import Mountain from "../../images/mountain.webp"
+import MountainMobile from "../../images/mountainMobile.webp"
+import Equip from "../../images/equip.webp"
+import EquipMobile from "../../images/equipMobile.webp"
+import Office from "../../images/office.webp"
+import OfficeMobile from "../../images/officeMobile.webp"
 
 export const advantages = [
   {
@@ -39,7 +39,7 @@ export const advantages = [
       "Seu especialista estará constantemente analisando o mercado, sugerindo ajustes que precisam ser feitos para caanhar as melhores oportunidades do mercado.",
     icon: IoRocketSharp,
   },
-];
+]
 
 export const cards = [
   {
@@ -54,7 +54,7 @@ export const cards = [
       "Recomendação das melhores aplicações do mercado, visando melhorar os resultados e ajudar os clientes a ganharem mais.",
     image: Card2,
   },
-];
+]
 
 export const about = [
   {
@@ -73,7 +73,7 @@ export const about = [
       "Milhões de reais acessorados em bancos comerciais e de investimentos",
     Icon: RiMoneyDollarCircleLine,
   },
-];
+]
 
 export const contacts = [
   {
@@ -101,7 +101,7 @@ export const contacts = [
     icon: BsInstagram,
     link: "https://www.instagram.com/adinvestimentos.oficial/",
   },
-];
+]
 
 export const advisors = [
   {
@@ -110,7 +110,7 @@ export const advisors = [
     description:
       "Assessor de investimentos com mais de 5 anos trabalhando no mercado financeiro. Formado em Ciências Contábeis. Pós graduado em Administração de Empresas. Trabalhou em bancos comerciais e bancos de investimento, atendendo o público alta renda. Atualmente proprietário da AD Investimentos na cidade de Três Lagoas-MS.",
   },
-];
+]
 
 export const messages = [
   {
@@ -121,7 +121,7 @@ export const messages = [
     time: "Agora",
     text: "Mês passado sua carteira rendeu muito bem! Também temos novas opções para otimizar seus investimentos. Vamos marcar uma reunião para amanhã às 15h? A compra da casa própria está cada vez mais próxima!",
   },
-];
+]
 
 export const carouselImages = [
   {
@@ -169,4 +169,4 @@ export const carouselImages = [
       </div>
     ),
   },
-];
+]
