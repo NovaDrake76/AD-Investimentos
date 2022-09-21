@@ -34,7 +34,7 @@ const Landing = () => {
         <img
           srcSet={`${item.imageMobile} 500w, ${item.image} 1000w`}
           sizes="(max-width: 500px) 500px, 1000px"
-          src={item.image}
+          src={item.imageMobile}
           alt={`carousel ${item.image}`}
           className="min-w-screen"
         />
