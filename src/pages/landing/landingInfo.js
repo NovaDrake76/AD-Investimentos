@@ -1,11 +1,9 @@
-import { FaMedal, FaUserGraduate, FaHandshake } from "react-icons/fa"
-import { MdSecurity, MdTimeline, MdOutlineMailOutline } from "react-icons/md"
-import { IoRocketSharp } from "react-icons/io5"
+import { FaHandshake } from "react-icons/fa"
+import { MdTimeline, MdOutlineMailOutline } from "react-icons/md"
 import { RiMoneyDollarCircleLine } from "react-icons/ri"
 import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs"
 import { AiOutlineWhatsApp } from "react-icons/ai"
-import Card1 from "../../images/card1.webp"
-import Card2 from "../../images/card2.webp"
+
 import Alvaro from "../../images/alvaro.webp"
 import Mountain from "../../images/mountain.webp"
 import MountainMobile from "../../images/mountainMobile.webp"
@@ -13,48 +11,6 @@ import Equip from "../../images/equip.webp"
 import EquipMobile from "../../images/equipMobile.webp"
 import Office from "../../images/office.webp"
 import OfficeMobile from "../../images/officeMobile.webp"
-
-export const advantages = [
-  {
-    name: "Qualidade",
-    description:
-      "Invista nas melhores oportunidades de todo o mercado, com a confiança e expertise de uma equipe que está há anos cuidando do dinheiro de milhares de clientes.",
-    icon: FaMedal,
-  },
-  {
-    name: "Segurança",
-    description:
-      "Somos representantes autorizados pela Guide Investimentos - uma das maiores e melhores corretoras de investimentos do país. Nós prezamos pela transparência, honestidade e confiança em nossas relações.",
-    icon: MdSecurity,
-  },
-  {
-    name: "Competência",
-    description:
-      "Possuímos mais de 5 anos de experiência no mercado financeiro. Nossos assessores são especialistas em investimentos (CEA), com carreiras consolidadas em grandes bancos comerciais e de investimentos.",
-    icon: FaUserGraduate,
-  },
-  {
-    name: "Velocidade",
-    description:
-      "Seu especialista estará constantemente analisando o mercado, sugerindo ajustes que precisam ser feitos para caanhar as melhores oportunidades do mercado.",
-    icon: IoRocketSharp,
-  },
-]
-
-export const cards = [
-  {
-    name: "Análise das Aplicações ",
-    description:
-      "Analise suas aplicações em outros bancos sem custo, e descubra se é possível melhorar seus resultados.",
-    image: Card1,
-  },
-  {
-    name: "Assessoria de Investimentos",
-    description:
-      "Recomendação das melhores aplicações do mercado, visando melhorar os resultados e ajudar os clientes a ganharem mais.",
-    image: Card2,
-  },
-]
 
 export const about = [
   {
@@ -162,7 +118,7 @@ export const carouselImages = [
         <span className="flex text-xl md:text-5xl text-white font-extralight text-start font-['Raleway']">
           AD INVESTIMENTOS
         </span>
-        <h2 className="flex flex-col gap-10 text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight text-start">
+        <h2 className="flex flex-col gap-5  text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight text-start">
           NÓS ANALISAMOS INVESTIMENTOS TODOS OS DIAS PARA TE ENTREGAR APENAS
           <span className="text-adblue"> O MELHOR.</span>
         </h2>

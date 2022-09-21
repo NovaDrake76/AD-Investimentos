@@ -4,13 +4,13 @@ import { Carousel } from "react-responsive-carousel"
 import MountainBack from "../../images/backMountain.webp"
 import MountainBackMobile from "../../images/backMountainMobile.webp"
 import History from "../../images/history.webp"
-import Zap from "../../images/zap.webp"
-
+import BackgroundVideo from "../../components/video"
 import { AiOutlineWhatsApp } from "react-icons/ai"
+import Advantages from "./advantages"
+import Cards from "./cards"
+import Structure from "./structure"
 
 import {
-  advantages,
-  cards,
   about,
   contacts,
   advisors,
@@ -19,34 +19,12 @@ import {
 } from "./landingInfo"
 
 let renderCarouselImages,
-  renderAdvantages,
-  renderCards,
   renderAboutUs,
   renderAdvisors,
   renderMessages,
   renderContact
 
 const Landing = () => {
-  renderAdvantages = advantages.map((advantage, index) => {
-    return (
-      <div
-        key={index}
-        className="flex flex-col items-center gap-4 p-4  text-[#4D4D4D] hover:text-adblue hover:border-adblue md:border-white md:border-[1px] transition-all duration-500"
-      >
-        <div className="flex items-center justify-center w-20 h-20">
-          <advantage.icon className="text-5xl " />
-        </div>
-        <span className="text-2xl font-bold text-[#4c4c4c] font-['Raleway']  ">
-          {advantage.name}
-        </span>
-        <div className="flex bg-adblue w-[50px] h-[1px]" />
-        <span className="text-lg font-semibold font-['Raleway'] text-[#4c4c4c] ">
-          {advantage.description}
-        </span>
-      </div>
-    )
-  })
-
   renderCarouselImages = carouselImages.map((item) => {
     return (
       <div key={item.image}>
@@ -60,28 +38,6 @@ const Landing = () => {
           alt={`carousel ${item.image}`}
           className="min-w-screen"
         />
-      </div>
-    )
-  })
-
-  renderCards = cards.map((card, index) => {
-    return (
-      <div key={index} className="flex flex-col gap-5 md:flex-row">
-        <div className="flex items-center justify-center ">
-          <img
-            src={card.image}
-            alt={card.name}
-            className="object-cover px-4 h-52 md:h-72 lg:px-0"
-          />
-        </div>
-        <div className="flex flex-col p-4 gap-5 md:max-w-[260px] ">
-          <h3 className="text-2xl text-[#262626] font-['Oswald'] md:text-start">
-            {card.name}
-          </h3>
-          <span className="text-lg font-semibold font-['Raleway'] text-[#4c4c4c] md:text-start">
-            {card.description}
-          </span>
-        </div>
       </div>
     )
   })
@@ -198,25 +154,22 @@ const Landing = () => {
         {renderCarouselImages}
       </Carousel>
       <div className="flex justify-center mt-20">
-        <div className="flex flex-col w-full max-w-6xl gap-20">
+        <div className="flex flex-col w-full max-w-6xl gap-14">
           {renderOurTitle("NOSSAS", "VANTAGENS")}
           <div className="flex flex-col justify-center md:flex-row gap-9">
-            {renderAdvantages}
+            <Advantages />
           </div>
           {renderOurTitle("NOSSOS", "PRODUTOS")}
-          <div className="flex flex-col gap-5 md:flex-row">{renderCards}</div>
+          <div className="flex flex-col gap-5 md:flex-row">
+            <Cards />
+          </div>
           {renderOurTitle("NOSSA", "ESTRUTURA")}
-          <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-3xl px-5">
-            Localizado na cidade de Três Lagoas-MS, contamos com prédio
-            comercial no centro da cidade localizado na AV. Olinto Mancini 878,
-            para melhor atendê-los. Venha tomar um café conosco e analisar suas
-            aplicações. Qualidade garantida!
-          </p>
+          <Structure />
         </div>
       </div>
       <div className="flex justify-center ">
-        <div className="absolute flex flex-col gap-4 p-4 md:gap-14">
-          <div className="flex flex-col items-start max-w-4xl gap-4 h-2/4 mt-14">
+        <div className="absolute flex justify-center  gap-4 p-4 md:gap-14 h-[650px] w-full bg-[#000000]/60">
+          <div className="flex flex-col items-start max-w-[1100px] gap-4 h-2/4 mt-14">
             <h2 className="text-2xl md:text-[52px] font-bold font-['Oswald'] text-white leading-tight text-start">
               <span>ACOMPANHAMENTO DOS SEUS INVESTIMENTOS</span>
               <span className="text-adblue"> DIRETAMENTE POR WHATSAPP.</span>
@@ -226,11 +179,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <img
-          src={Zap}
-          alt="man in cellphone"
-          className="min-h-[650px] md:h-[550px] object-cover w-full"
-        />
+        <BackgroundVideo />
       </div>
 
       <div className="flex justify-center mt-20">
