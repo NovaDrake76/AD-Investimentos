@@ -20,13 +20,13 @@ export const about = [
   },
   {
     Number: "500",
-    Description: "Clientes investidores atendidos em bancos",
+    Description: "Clientes investidores atendidos",
     Icon: FaHandshake,
   },
   {
     Number: "300",
     Description:
-      "Milhões de reais acessorados em bancos comerciais e de investimentos",
+      "Milhões de reais assessorados em bancos comerciais e de investimentos",
     Icon: RiMoneyDollarCircleLine,
   },
 ]

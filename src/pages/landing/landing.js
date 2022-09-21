@@ -230,7 +230,7 @@ const Landing = () => {
       <div className="flex justify-center mt-20 ">
         <div className="flex flex-col justify-start w-full max-w-6xl gap-4">
           <div className="flex flex-col gap-14">
-            {renderOurTitle("NOSSOS", "ACESSORES")}
+            {renderOurTitle("NOSSOS", "ASSESSORES")}
             <div className="flex gap-5 "></div>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 p-4 md:flex-row">
