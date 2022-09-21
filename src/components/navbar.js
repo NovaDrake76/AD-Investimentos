@@ -2,6 +2,29 @@ import React from "react";
 import Logo from "../images/logo3.webp";
 import Guide from "../images/guide.webp";
 
+const links = [
+  {
+    name: "Vantagens",
+    href: "#vantagens",
+  },
+  {
+    name: "Produtos",
+    href: "#produtos",
+  },
+  {
+    name: "Estrutura",
+    href: "#estrutura",
+  },
+  {
+    name: "Assessores",
+    href: "#assessores",
+  },
+  {
+    name: "Contatos",
+    href: "#contatos",
+  },
+];
+
 const Navbar = () => {
   return (
     <nav className="flex justify-center w-screen p-2 border-b-4 border-adblue">
@@ -17,17 +40,21 @@ const Navbar = () => {
           <img
             src={Guide}
             alt="Logo Guide"
-            className="object-contain w-28 p-2"
+            className="object-contain p-2 w-28"
             width={112}
             height="100%"
           />
         </div>
         <div className="gap-6 text-lg font-['Raleway'] hidden md:flex text-[#4c4c4c] font-bold">
-          <a href="#vantagens">Vantagens</a>
-          <a href="#produtos">Produtos</a>
-          <a href="#estrutura">Estrutura</a>
-          <a href="#assessores">Assessores</a>
-          <a href="#contatos">Contatos</a>
+          {links.map((link) => (
+            <a
+              key={link.name}
+              className="transition-all hover:text-adblue"
+              href={link.href}
+            >
+              {link.name}
+            </a>
+          ))}
         </div>
       </div>
     </nav>

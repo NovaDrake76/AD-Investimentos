@@ -28,12 +28,12 @@ const Landing = () => {
   renderCarouselImages = carouselImages.map((item) => {
     return (
       <div key={item.image}>
-        <div className="absolute  flex items-center justify-center w-full h-full">
+        <div className="absolute flex items-center justify-center w-full h-full">
           {item.content}
         </div>
         <picture>
-          <source media="(max-width: 799px)" srcset={item.imageMobile} />
-          <source media="(min-width: 800px)" srcset={item.image} />
+          <source media="(max-width: 799px)" srcSet={item.imageMobile} />
+          <source media="(min-width: 800px)" srcSet={item.image} />
           <img
             src={item.image}
             alt="Mountain Background"
@@ -230,8 +230,8 @@ const Landing = () => {
           </div>
         </div>
         <picture>
-          <source media="(max-width: 799px)" srcset={MountainBackMobile} />
-          <source media="(min-width: 800px)" srcset={MountainBack} />
+          <source media="(max-width: 799px)" srcSet={MountainBackMobile} />
+          <source media="(min-width: 800px)" srcSet={MountainBack} />
           <img
             src={MountainBack}
             alt="mountain background"
