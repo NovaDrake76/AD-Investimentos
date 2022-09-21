@@ -236,6 +236,8 @@ const Landing = () => {
             src={MountainBack}
             alt="mountain background"
             className="h-[850px] md:h-[550px] object-cover"
+            width="100%"
+            height="100%"
           />
         </picture>
       </div>
