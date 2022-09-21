@@ -31,12 +31,11 @@ const Landing = () => {
         <div className="absolute  flex items-center justify-center w-full h-full">
           {item.content}
         </div>
-        <img
-          src={item.imageMobile}
-          srcSet={`${item.imageMobile} 500w, ${item.image} 1000w`}
-          alt={`carousel ${item.image}`}
-          className="min-w-screen"
-        />
+        <picture>
+          <source media="(max-width: 799px)" srcset={item.imageMobile} />
+          <source media="(min-width: 800px)" srcset={item.image} />
+          <img src={item.image} alt={item.content} className="min-w-screen" />
+        </picture>
       </div>
     );
   });
@@ -68,6 +67,7 @@ const Landing = () => {
           href={contact.link}
           target="_blank"
           rel="noreferrer"
+          aria-label={contact.name}
           className="flex items-center justify-center w-20 h-20 rounded-full bg-[#EDEDED]  hover:text-adblue text-[#2C2F33] transition-all duration-400"
         >
           <contact.icon className="text-4xl " />
@@ -223,13 +223,15 @@ const Landing = () => {
             {renderAboutUs}
           </div>
         </div>
-        <img
-          srcSet={`${MountainBackMobile} 500w, ${MountainBack} 1000w,`}
-          sizes="(max-width: 500px) 500px, 1000px"
-          src={MountainBack}
-          alt="mountain background"
-          className="h-[850px] md:h-[550px] object-cover"
-        />
+        <picture>
+          <source media="(max-width: 799px)" srcset={MountainBackMobile} />
+          <source media="(min-width: 800px)" srcset={MountainBack} />
+          <img
+            src={MountainBack}
+            alt="mountain background"
+            className="h-[850px] md:h-[550px] object-cover"
+          />
+        </picture>
       </div>
       <div className="flex justify-center mt-20 ">
         <div className="flex flex-col justify-start w-full max-w-6xl gap-4">
