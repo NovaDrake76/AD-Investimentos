@@ -1,14 +1,14 @@
-import React from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from "react-responsive-carousel"
-import MountainBack from "../../images/backMountain.webp"
-import MountainBackMobile from "../../images/backMountainMobile.webp"
+import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import MountainBack from "../../images/backMountain.webp";
+import MountainBackMobile from "../../images/backMountainMobile.webp";
 // import History from "../../images/history.webp"
-import BackgroundVideo from "../../components/video"
-import { AiOutlineWhatsApp } from "react-icons/ai"
-import Advantages from "./advantages"
-import Cards from "./cards"
-import Structure from "./structure"
+import BackgroundVideo from "../../components/video";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import Advantages from "./advantages";
+import Cards from "./cards";
+import Structure from "./structure";
 
 import {
   about,
@@ -16,19 +16,19 @@ import {
   advisors,
   messages,
   carouselImages,
-} from "./landingInfo"
+} from "./landingInfo";
 
 let renderCarouselImages,
   renderAboutUs,
   renderAdvisors,
   renderMessages,
-  renderContact
+  renderContact;
 
 const Landing = () => {
   renderCarouselImages = carouselImages.map((item) => {
     return (
       <div key={item.image}>
-        <div className="absolute flex items-center justify-center w-full h-full">
+        <div className="absolute  flex items-center justify-center w-full h-full">
           {item.content}
         </div>
         <img
@@ -39,8 +39,8 @@ const Landing = () => {
           className="min-w-screen"
         />
       </div>
-    )
-  })
+    );
+  });
 
   renderAboutUs = about.map((item, index) => {
     return (
@@ -59,8 +59,8 @@ const Landing = () => {
           </span>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   renderContact = contacts.map((contact, index) => {
     return (
@@ -77,8 +77,8 @@ const Landing = () => {
           {contact.name}
         </span>
       </div>
-    )
-  })
+    );
+  });
 
   renderAdvisors = advisors.map((advisor, index) => {
     return (
@@ -97,8 +97,8 @@ const Landing = () => {
           {advisor.description}
         </p>
       </div>
-    )
-  })
+    );
+  });
 
   renderMessages = messages.map((message, index) => {
     return (
@@ -126,8 +126,8 @@ const Landing = () => {
           </div>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   function renderOurTitle(our, title) {
     return (
@@ -137,7 +137,7 @@ const Landing = () => {
         </span>
         <span className="text-5xl font-['Oswald'] font-bold">{title}</span>
       </div>
-    )
+    );
   }
 
   return (
@@ -290,7 +290,7 @@ const Landing = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;

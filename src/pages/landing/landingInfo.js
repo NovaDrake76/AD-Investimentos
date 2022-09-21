@@ -1,16 +1,16 @@
-import { FaHandshake } from "react-icons/fa"
-import { MdTimeline, MdOutlineMailOutline } from "react-icons/md"
-import { RiMoneyDollarCircleLine } from "react-icons/ri"
-import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs"
-import { AiOutlineWhatsApp } from "react-icons/ai"
+import { FaHandshake } from "react-icons/fa";
+import { MdTimeline, MdOutlineMailOutline } from "react-icons/md";
+import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
-import Alvaro from "../../images/alvaro.webp"
-import Mountain from "../../images/mountain.webp"
-import MountainMobile from "../../images/mountainMobile.webp"
-import Equip from "../../images/equip.webp"
-import EquipMobile from "../../images/equipMobile.webp"
-import Office from "../../images/office.webp"
-import OfficeMobile from "../../images/officeMobile.webp"
+import Alvaro from "../../images/alvaro.webp";
+import Mountain from "../../images/mountain.webp";
+import MountainMobile from "../../images/mountainMobile.webp";
+import Equip from "../../images/equip.webp";
+import EquipMobile from "../../images/equipMobile.webp";
+import Office from "../../images/office.webp";
+import OfficeMobile from "../../images/officeMobile.webp";
 
 export const about = [
   {
@@ -29,7 +29,7 @@ export const about = [
       "Mais de 300 milhões de reais assessorados em bancos comerciais e de investimentos",
     Icon: RiMoneyDollarCircleLine,
   },
-]
+];
 
 export const contacts = [
   {
@@ -57,7 +57,7 @@ export const contacts = [
     icon: BsInstagram,
     link: "https://www.instagram.com/adinvestimentos.oficial/",
   },
-]
+];
 
 export const advisors = [
   {
@@ -66,7 +66,7 @@ export const advisors = [
     description:
       "Assessor de investimentos com mais de 5 anos trabalhando no mercado financeiro. Formado em Ciências Contábeis. Pós graduado em Administração de Empresas. Trabalhou em bancos comerciais e bancos de investimento, atendendo o público alta renda. Atualmente proprietário da AD Investimentos na cidade de Três Lagoas-MS.",
   },
-]
+];
 
 export const messages = [
   {
@@ -77,7 +77,7 @@ export const messages = [
     time: "Agora",
     text: "Mês passado sua carteira rendeu muito bem! Também temos novas opções para otimizar seus investimentos. Vamos marcar uma reunião para amanhã às 15h? A compra da casa própria está cada vez mais próxima!",
   },
-]
+];
 
 export const carouselImages = [
   {
@@ -92,6 +92,16 @@ export const carouselImages = [
           INVESTIR NAS MELHORES OPÇÕES DO MERCADO?
           <span className="text-adblue"> AQUI VOCÊ PODE.</span>
         </h2>
+        <a
+          href="https://api.whatsapp.com/send?phone=5567993466245"
+          target="_blank"
+          rel="noreferrer"
+          className="hidden md:flex md:self-end md:mt-20"
+        >
+          <button className="flex text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
+            <AiOutlineWhatsApp /> Fale com um especialista AD
+          </button>
+        </a>
       </div>
     ),
   },
@@ -107,6 +117,16 @@ export const carouselImages = [
           INVISTA COM ASSESSORES QUE SÃO ESPECIALISTAS EM INVESTIMENTOS.
           <span className="text-adblue"> SEM CUSTO.</span>
         </h2>
+        <a
+          href="https://api.whatsapp.com/send?phone=5567993466245"
+          target="_blank"
+          rel="noreferrer"
+          className="hidden md:flex self-end "
+        >
+          <button className="flex text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
+            <AiOutlineWhatsApp /> Fale com um especialista AD
+          </button>
+        </a>
       </div>
     ),
   },
@@ -122,7 +142,17 @@ export const carouselImages = [
           NÓS ANALISAMOS INVESTIMENTOS TODOS OS DIAS PARA TE ENTREGAR APENAS
           <span className="text-adblue"> O MELHOR.</span>
         </h2>
+        <a
+          href="https://api.whatsapp.com/send?phone=5567993466245"
+          target="_blank"
+          rel="noreferrer"
+          className="hidden md:flex md:self-end md:mt-20"
+        >
+          <button className="flex text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
+            <AiOutlineWhatsApp /> Fale com um especialista AD
+          </button>
+        </a>
       </div>
     ),
   },
-]
+];
