@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 import MountainBack from "../../images/backMountain.webp"
 import MountainBackMobile from "../../images/backMountainMobile.webp"
-import History from "../../images/history.webp"
+// import History from "../../images/history.webp"
 import BackgroundVideo from "../../components/video"
 import { AiOutlineWhatsApp } from "react-icons/ai"
 import Advantages from "./advantages"
@@ -154,20 +154,24 @@ const Landing = () => {
         {renderCarouselImages}
       </Carousel>
       <div className="flex justify-center mt-20">
-        <div className="flex flex-col w-full max-w-6xl gap-14">
+        <div id="vantagens" className="flex flex-col w-full max-w-6xl gap-14">
           {renderOurTitle("NOSSAS", "VANTAGENS")}
           <div className="flex flex-col justify-center md:flex-row gap-9">
             <Advantages />
           </div>
-          {renderOurTitle("NOSSOS", "PRODUTOS")}
-          <div className="flex flex-col gap-5 md:flex-row">
-            <Cards />
+          <div id="produtos" className="flex flex-col gap-6">
+            {renderOurTitle("NOSSOS", "PRODUTOS")}
+            <div className="flex flex-col gap-5 md:flex-row">
+              <Cards />
+            </div>
           </div>
-          {renderOurTitle("NOSSA", "ESTRUTURA")}
-          <Structure />
+          <div className="flex flex-col gap-4 mt-8" id="estrutura">
+            {renderOurTitle("NOSSA", "ESTRUTURA")}
+            <Structure />
+          </div>
         </div>
       </div>
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-14">
         <div className="absolute flex justify-center  gap-4 p-4 md:gap-14 h-[650px] w-full bg-[#000000]/60">
           <div className="flex flex-col items-start max-w-[1100px] gap-4 h-2/4 mt-14">
             <h2 className="text-2xl md:text-[52px] font-bold font-['Oswald'] text-white leading-tight text-start">
@@ -184,28 +188,29 @@ const Landing = () => {
 
       <div className="flex justify-center mt-20">
         <div className="flex flex-col w-full max-w-6xl gap-20">
-          {renderOurTitle("CONTE", "CONOSCO")}
+          {renderOurTitle("SOBRE", "NÓS")}
           <div className="flex ">
             <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-3xl px-5">
-              Nossa missão é ajudar você a realizar os seus sonhos e objetivos
-              através de uma assessoria em investimentos de qualidade,
-              entregando a confiança e rentabilidade que você merece. A nossa
-              sede fica na cidade de Três Lagoas - MS, e atendemos toda a
-              região. Entre em contato conosco e marque uma análise de suas
-              aplicações com um de nossos especialistas.
+              Hoje cuidamos do patrimônio de incontáveis famílias na cidade de
+              três lagoas e região. Possuímos mais de 5 anos de experiência
+              atendendo o público alta renda, com nossos assessores com
+              passagens por bancos comerciais e bancos de investimentos. Iremos
+              atendê-lo da melhor forma possível e analisar suas aplicações
+              diariamente, para que possamos melhorar seus resultados e garantir
+              a sua satisfação.
             </p>
-            <div className=" justify-end hidden lg:flex -mt-[150px] ">
+            {/* <div className=" justify-end hidden lg:flex -mt-[150px] ">
               <img
                 src={History}
                 alt="Business Woman"
                 className="max-h-[500px]"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-14">
         <div className="absolute flex flex-col gap-4 md:gap-14">
           <div className="flex flex-col items-center justify-center max-w-4xl gap-4 h-2/4 mt-14">
             <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight ">
@@ -229,9 +234,8 @@ const Landing = () => {
       </div>
       <div className="flex justify-center mt-20 ">
         <div className="flex flex-col justify-start w-full max-w-6xl gap-4">
-          <div className="flex flex-col gap-14">
+          <div className="flex flex-col gap-14" id="assessores">
             {renderOurTitle("NOSSOS", "ASSESSORES")}
-            <div className="flex gap-5 "></div>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 p-4 md:flex-row">
             {renderAdvisors}

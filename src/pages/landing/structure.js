@@ -24,9 +24,8 @@ export default function Structure() {
     <div className="flex flex-col justify-between gap-2 p-4 md:p-0 md:pb-5 md:flex-row">
       <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-3xl px-5">
         Localizado na cidade de Três Lagoas-MS, contamos com prédio comercial no
-        centro da cidade localizado na AV. Olinto Mancini 878, para melhor
-        atendê-los. Venha tomar um café conosco e analisar suas aplicações.
-        Qualidade garantida!
+        centro da cidade localizado na AV. Olinto Mancini 878. Entre em contato
+        conosco e marque uma visita.
       </p>
       <Carousel
         autoPlay={true}

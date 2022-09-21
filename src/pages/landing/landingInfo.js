@@ -24,9 +24,9 @@ export const about = [
     Icon: FaHandshake,
   },
   {
-    Number: "300",
+    Number: "300mi",
     Description:
-      "Milhões de reais assessorados em bancos comerciais e de investimentos",
+      "Mais de 300 milhões de reais assessorados em bancos comerciais e de investimentos",
     Icon: RiMoneyDollarCircleLine,
   },
 ]

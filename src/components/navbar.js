@@ -18,8 +18,12 @@ const Navbar = () => {
             className="object-contain w-20 p-2 h-14"
           />
         </div>
-        <div className="flex gap-3 text-lg font-['Raleway'] text-[#4c4c4c] font-bold">
-          <a href="#contatos">Contato</a>
+        <div className="flex gap-6 text-lg font-['Raleway']  text-[#4c4c4c] font-bold">
+          <a href="#vantagens">Vantagens</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#estrutura">Estrutura</a>
+          <a href="#assessores">Assessores</a>
+          <a href="#contatos">Contatos</a>
         </div>
       </div>
     </nav>
