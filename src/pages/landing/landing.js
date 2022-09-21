@@ -34,7 +34,13 @@ const Landing = () => {
         <picture>
           <source media="(max-width: 799px)" srcset={item.imageMobile} />
           <source media="(min-width: 800px)" srcset={item.image} />
-          <img src={item.image} alt={item.content} className="min-w-screen" />
+          <img
+            src={item.image}
+            alt="Mountain Background"
+            className="min-w-screen"
+            width="100%"
+            height="100%"
+          />
         </picture>
       </div>
     );

@@ -101,8 +101,20 @@ const Footer = () => {
             reservados.
           </p>
           <div className="flex flex-col gap-3 items-center divide-y divide-[#808080]/50">
-            <img src={Logo} alt="logo" className="w-[150px] object-contain" />
-            <img src={Guide} alt="logo" className="w-[200px] p-3" />
+            <img
+              src={Logo}
+              alt="logo"
+              className="w-[150px] object-contain"
+              width={200}
+              height="100%"
+            />
+            <img
+              src={Guide}
+              alt="logo"
+              className="w-[200px] p-3"
+              width={200}
+              height="100%"
+            />
           </div>
         </div>
         <div className="flex justify-center w-full mt-4">
@@ -114,42 +126,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// <div className="flex flex-col items-start justify-between w-full gap-3 max-w-7xl">
-//   <div className="flex justify-between w-full">
-//     <div className="flex flex-col gap-1">
-//       <div className="text-lg font-semibold text-start">
-//         AD Investimentos
-//       </div>
-
-//       <div className="flex items-center gap-2">
-//         <AiOutlineWhatsApp />
-//         <a href="mailto:ALVARO@ADINVESTIMENTOS.COM.BR">
-//           alvaro@adinvestimentos.com.br
-//         </a>
-//       </div>
-//       <div className="flex items-center gap-2">
-//         <MdOutlineMailOutline />
-//         <a href="https://api.whatsapp.com/send?phone=5567993466245">
-//           <span>+55 (67) 99346-6245</span>
-//         </a>
-//       </div>
-//     </div>
-//     <div className="flex flex-col gap-4 md:flex-row">
-//       <img
-//         src={Logo}
-//         alt="Logo AD Investimentos"
-//         className="object-contain w-20 h-20"
-//       />
-//       <img
-//         src={Guide}
-//         alt="Logo Guide"
-//         className="object-contain w-20 h-20"
-//       />
-//     </div>
-//   </div>
-
-//   <div className="flex justify-center w-full">
-//     © 2022 AD INVESTIMENTOS. TODOS OS DIREITOS RESERVADOS
-//   </div>
-// </div>

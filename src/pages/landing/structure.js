@@ -1,12 +1,12 @@
-import React from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from "react-responsive-carousel"
-import e1 from "../../images/escritorio/1.webp"
-import e2 from "../../images/escritorio/2.webp"
-import e3 from "../../images/escritorio/3.webp"
-import e4 from "../../images/escritorio/4.webp"
+import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import e1 from "../../images/escritorio/1.webp";
+import e2 from "../../images/escritorio/2.webp";
+import e3 from "../../images/escritorio/3.webp";
+import e4 from "../../images/escritorio/4.webp";
 
-let carouselImages = [e1, e2, e3, e4]
+let carouselImages = [e1, e2, e3, e4];
 
 let renderCarouselImages = carouselImages.map((item) => {
   return (
@@ -15,9 +15,11 @@ let renderCarouselImages = carouselImages.map((item) => {
       src={item}
       alt={`carousel ${item}`}
       className="rounded max-w-[100vw] md:max-w-xl"
+      width="100%"
+      height="100%"
     />
-  )
-})
+  );
+});
 
 export default function Structure() {
   return (
@@ -39,5 +41,5 @@ export default function Structure() {
         {renderCarouselImages}
       </Carousel>
     </div>
-  )
+  );
 }

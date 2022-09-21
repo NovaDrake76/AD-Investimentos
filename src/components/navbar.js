@@ -11,11 +11,15 @@ const Navbar = () => {
             src={Logo}
             alt="Logo AD Investimentos"
             className="object-contain h-14"
+            width="100%"
+            height={56}
           />
           <img
             src={Guide}
             alt="Logo Guide"
-            className="object-contain w-20 p-2 h-14"
+            className="object-contain w-28 p-2"
+            width={112}
+            height="100%"
           />
         </div>
         <div className="gap-6 text-lg font-['Raleway'] hidden md:flex text-[#4c4c4c] font-bold">
