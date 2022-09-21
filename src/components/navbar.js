@@ -1,6 +1,6 @@
-import React from "react"
-import Logo from "../images/logo3.webp"
-import Guide from "../images/guide.webp"
+import React from "react";
+import Logo from "../images/logo3.webp";
+import Guide from "../images/guide.webp";
 
 const Navbar = () => {
   return (
@@ -18,7 +18,7 @@ const Navbar = () => {
             className="object-contain w-20 p-2 h-14"
           />
         </div>
-        <div className="flex gap-6 text-lg font-['Raleway']  text-[#4c4c4c] font-bold">
+        <div className="gap-6 text-lg font-['Raleway'] hidden md:flex text-[#4c4c4c] font-bold">
           <a href="#vantagens">Vantagens</a>
           <a href="#produtos">Produtos</a>
           <a href="#estrutura">Estrutura</a>
@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
