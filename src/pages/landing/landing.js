@@ -187,7 +187,7 @@ const Landing = () => {
       </div>
 
       <div className="flex justify-center mt-20">
-        <div className="flex flex-col w-full max-w-6xl gap-20">
+        <div className="flex flex-col w-full max-w-6xl gap-8">
           {renderOurTitle("SOBRE", "NÓS")}
           <div className="flex ">
             <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-3xl px-5">
