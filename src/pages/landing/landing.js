@@ -5,6 +5,7 @@ import Family from "../../images/family.jpg";
 // import History from "../../images/history.webp"
 import Handshake from "../../images/handshake.png";
 import BackgroundVideo from "../../components/video";
+import LandingVideo from "../../components/landingVideo";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import Advantages from "./advantages";
 import Cards from "./cards";
@@ -15,64 +16,25 @@ import {
   contacts,
   advisors,
   messages,
-  carouselImages,
+  // carouselImages,
 } from "./landingInfo";
 
-let renderCarouselImages,
-  renderAboutUs,
-  renderAdvisors,
-  renderMessages,
-  renderContact;
+let renderAboutUs, renderAdvisors, renderMessages, renderContact;
+
+const ADHelp = [
+  <span>
+    COMO A <span className="text-adblue">AD</span> PODE AJUDÁ-LO A REALIZAR SEUS
+    SONHOS?
+  </span>,
+  "INVESTIR NAS MELHORES OPÇÕES DO MERCADO?",
+  "TRANQUILIDADE PARA A APOSENTADORIA?",
+  "INVESTIR PARA A COMPRA DE UMA CASA?",
+  <span>
+    AQUI VOCÊ<span className="text-adblue"> CONSEGUE</span>
+  </span>,
+];
 
 const Landing = () => {
-  renderCarouselImages = carouselImages.map((item) => {
-    return (
-      <div key={item.image}>
-        <div className="absolute flex flex-col items-center w-full h-full bg-[#000000]/40">
-          {item.content}
-          {item.ButtonChange ? (
-            <div className="flex items-end self-end justify-end mb-20 mr-20">
-              <a
-                href="https://api.whatsapp.com/send?phone=5567993466245"
-                target="_blank"
-                rel="noreferrer"
-                className="hidden md:flex"
-              >
-                <button className="flex text-white bg-adblue border-2 gap-3 border-adblue font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-white hover:bg-white hover:text-adblue transition-all duration-500 ease-in-out">
-                  <AiOutlineWhatsApp /> Fale com um especialista AD
-                </button>
-              </a>
-            </div>
-          ) : (
-            <div className="flex items-end self-end justify-end mb-20 mr-20">
-              <a
-                href="https://api.whatsapp.com/send?phone=5567993466245"
-                target="_blank"
-                rel="noreferrer"
-                className="hidden md:flex"
-              >
-                <button className="flex  text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
-                  <AiOutlineWhatsApp /> Fale com um especialista AD
-                </button>
-              </a>
-            </div>
-          )}
-        </div>
-        <picture>
-          <source media="(max-width: 799px)" srcSet={item.imageMobile} />
-          <source media="(min-width: 800px)" srcSet={item.image} />
-          <img
-            src={item.image}
-            alt="Mountain Background"
-            className="md:h-screen aspect-video min-w-screen"
-            width="100%"
-            height="100%"
-          />
-        </picture>
-      </div>
-    );
-  });
-
   renderAboutUs = about.map((item, index) => {
     return (
       <div
@@ -174,19 +136,38 @@ const Landing = () => {
 
   return (
     <div className="flex flex-col ">
-      <Carousel
-        autoPlay={true}
-        interval={3000}
-        showStatus={false}
-        showArrows={false}
-        infiniteLoop={true}
-        showThumbs={false}
-        transitionTime={1000}
-        animationHandler="fade"
-        className="flex border-b-8 border-adblue"
-      >
-        {renderCarouselImages}
-      </Carousel>
+      <div className="absolute h-[700px]  bg-[#000000]/40 w-screen md:w-[99.1vw]">
+        <Carousel
+          autoPlay={true}
+          interval={4000}
+          showStatus={false}
+          showArrows={false}
+          infiniteLoop={true}
+          showThumbs={false}
+          transitionTime={1000}
+          animationHandler="fade"
+        >
+          {ADHelp.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="flex  h-full justify-center items-center"
+              >
+                <div className="flex flex-col  h-[700px] justify-center items-center gap-4  max-w-5xl">
+                  <h2 className="text-4xl p-3 md:p-0 md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
+                    {item}
+                  </h2>
+                </div>
+              </div>
+            );
+          })}
+        </Carousel>
+      </div>
+      <LandingVideo />
+      {/* <div className="flex flex-col">
+        <BackgroundVideo className="absolute" />
+       
+      </div> */}
       <div className="flex justify-center mt-20">
         <div id="vantagens" className="flex flex-col w-full max-w-6xl gap-28">
           {renderOurTitle("NOSSAS", "VANTAGENS")}
