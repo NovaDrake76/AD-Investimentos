@@ -23,14 +23,14 @@ let renderAboutUs, renderAdvisors, renderMessages, renderContact;
 
 const ADHelp = [
   <span>
-    COMO A <span className="text-adblue">AD</span> PODE AJUDÁ-LO A REALIZAR SEUS
-    SONHOS?
+    COMO A <span className="text-adblue">AD INVESTIMENTOS</span> PODE AJUDÁ-LO A
+    REALIZAR SEUS SONHOS?
   </span>,
   "INVESTIR NAS MELHORES OPÇÕES DO MERCADO?",
   "TRANQUILIDADE PARA A APOSENTADORIA?",
   "INVESTIR PARA A COMPRA DE UMA CASA?",
   <span>
-    AQUI VOCÊ<span className="text-adblue"> CONSEGUE</span>
+    AQUI VOCÊ<span className="text-adblue"> CONSEGUE.</span>
   </span>,
 ];
 
@@ -144,7 +144,7 @@ const Landing = () => {
           showArrows={false}
           infiniteLoop={true}
           showThumbs={false}
-          transitionTime={1000}
+          transitionTime={1500}
           animationHandler="fade"
         >
           {ADHelp.map((item, index) => {
