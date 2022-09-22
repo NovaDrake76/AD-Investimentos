@@ -6,6 +6,7 @@ import Family from "../../images/family.jpg";
 import Handshake from "../../images/handshake.png";
 import BackgroundVideo from "../../components/video";
 import LandingVideo from "../../components/landingVideo";
+import Logo from "../../images/logo2.webp";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import Advantages from "./advantages";
 import Cards from "./cards";
@@ -27,11 +28,12 @@ const ADHelp = [
     REALIZAR SEUS SONHOS?
   </span>,
   "INVESTIR NAS MELHORES OPÇÕES DO MERCADO?",
-  "TRANQUILIDADE PARA A APOSENTADORIA?",
-  "INVESTIR PARA A COMPRA DE UMA CASA?",
+  "TRANQUILIDADE PARA A SUA APOSENTADORIA?",
+  "INVESTIR PARA A COMPRA DE UM IMÓVEL?",
   <span>
     AQUI VOCÊ<span className="text-adblue"> CONSEGUE.</span>
   </span>,
+  <img src={Logo} alt="AD Investimentos" className="w-60 h-60" />,
 ];
 
 const Landing = () => {
@@ -139,12 +141,13 @@ const Landing = () => {
       <div className="absolute h-[700px]  bg-[#000000]/40 w-screen md:w-[99.1vw]">
         <Carousel
           autoPlay={true}
-          interval={4000}
+          interval={3000}
           showStatus={false}
           showArrows={false}
           infiniteLoop={true}
           showThumbs={false}
-          transitionTime={1500}
+          transitionTime={3500}
+          swipeable={false}
           animationHandler="fade"
         >
           {ADHelp.map((item, index) => {
