@@ -141,12 +141,13 @@ const Landing = () => {
       <div className="absolute h-[700px]  bg-[#000000]/40 w-screen md:w-[99.1vw]">
         <Carousel
           autoPlay={true}
-          interval={3000}
+          interval={4000}
           showStatus={false}
           showArrows={false}
           infiniteLoop={true}
           showThumbs={false}
-          transitionTime={3500}
+          showIndicators={false}
+          transitionTime={2000}
           swipeable={false}
           animationHandler="fade"
         >
