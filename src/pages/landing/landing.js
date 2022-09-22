@@ -245,10 +245,12 @@ const Landing = () => {
       </div>
 
       <div className="flex justify-center mt-14">
-        <div className="absolute flex flex-col gap-4 md:gap-14">
+        <div className="flex flex-col gap-4 md:absolute md:gap-14">
           <div className="flex flex-col items-center justify-center max-w-4xl gap-4 h-2/4 mt-14">
             <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight ">
-              <span>VAMOS TRAZER </span>
+              <span className="text-[#000000] md:text-white">
+                VAMOS TRAZER{" "}
+              </span>
               <span className="text-adblue">
                 SUCESSO E TRANQUILIDADE PARA SUA VIDA
               </span>
@@ -258,7 +260,7 @@ const Landing = () => {
             {renderAboutUs}
           </div>
         </div>
-        <picture>
+        <picture className="hidden md:flex">
           <source media="(max-width: 799px)" srcSet={MountainBackMobile} />
           <source media="(min-width: 800px)" srcSet={MountainBack} />
           <img
