@@ -1,14 +1,14 @@
-import React from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from "react-responsive-carousel"
-import MountainBack from "../../images/backMountain.webp"
-import MountainBackMobile from "../../images/backMountainMobile.webp"
+import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import Family from "../../images/family.jpg";
 // import History from "../../images/history.webp"
-import BackgroundVideo from "../../components/video"
-import { AiOutlineWhatsApp } from "react-icons/ai"
-import Advantages from "./advantages"
-import Cards from "./cards"
-import Structure from "./structure"
+import Handshake from "../../images/handshake.png";
+import BackgroundVideo from "../../components/video";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import Advantages from "./advantages";
+import Cards from "./cards";
+import Structure from "./structure";
 
 import {
   about,
@@ -16,13 +16,13 @@ import {
   advisors,
   messages,
   carouselImages,
-} from "./landingInfo"
+} from "./landingInfo";
 
 let renderCarouselImages,
   renderAboutUs,
   renderAdvisors,
   renderMessages,
-  renderContact
+  renderContact;
 
 const Landing = () => {
   renderCarouselImages = carouselImages.map((item) => {
@@ -70,8 +70,8 @@ const Landing = () => {
           />
         </picture>
       </div>
-    )
-  })
+    );
+  });
 
   renderAboutUs = about.map((item, index) => {
     return (
@@ -90,8 +90,8 @@ const Landing = () => {
           </span>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   renderContact = contacts.map((contact, index) => {
     return (
@@ -109,8 +109,8 @@ const Landing = () => {
           {contact.name}
         </span>
       </div>
-    )
-  })
+    );
+  });
 
   renderAdvisors = advisors.map((advisor, index) => {
     return (
@@ -129,8 +129,8 @@ const Landing = () => {
           {advisor.description}
         </p>
       </div>
-    )
-  })
+    );
+  });
 
   renderMessages = messages.map((message, index) => {
     return (
@@ -158,8 +158,8 @@ const Landing = () => {
           </div>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   function renderOurTitle(our, title) {
     return (
@@ -169,7 +169,7 @@ const Landing = () => {
         </span>
         <span className="text-5xl font-['Oswald'] font-bold">{title}</span>
       </div>
-    )
+    );
   }
 
   return (
@@ -223,8 +223,8 @@ const Landing = () => {
       <div className="flex justify-center mt-20">
         <div className="flex flex-col w-full max-w-6xl gap-8">
           {renderOurTitle("SOBRE", "NÓS")}
-          <div className="flex ">
-            <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-3xl px-5">
+          <div className="flex flex-col md:flex-row">
+            <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-2xl px-5">
               Hoje cuidamos do patrimônio de incontáveis famílias na cidade de
               três lagoas e região. Possuímos mais de 5 anos de experiência
               atendendo o público alta renda, com nossos assessores com
@@ -233,20 +233,20 @@ const Landing = () => {
               diariamente, para que possamos melhorar seus resultados e garantir
               a sua satisfação.
             </p>
-            {/* <div className=" justify-end hidden lg:flex -mt-[150px] ">
+            <div className=" justify-end flex p-2 -mt-[100px] ">
               <img
-                src={History}
-                alt="Business Woman"
-                className="max-h-[500px]"
+                src={Handshake}
+                alt="Business man shaking hands with woman at office "
+                className="max-h-[500px] rounded  object-cover "
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center mt-14">
-        <div className="flex flex-col gap-4 md:absolute md:gap-14">
-          <div className="flex flex-col items-center justify-center max-w-4xl gap-4 h-2/4 mt-14">
+      <div className="flex justify-center  mt-14">
+        <div className="md:absolute md:bg-[#000000]/60 w-full h-[800px] flex justify-center items-center">
+          <div className="flex flex-col max-w-4xl gap-8">
             <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight ">
               <span className="text-[#000000] md:text-white">
                 VAMOS TRAZER{" "}
@@ -255,18 +255,17 @@ const Landing = () => {
                 SUCESSO E TRANQUILIDADE PARA SUA VIDA
               </span>
             </h2>
-          </div>
-          <div className="flex flex-col items-center w-full gap-10 md:items-stretch md:flex-row md:justify-around">
-            {renderAboutUs}
+            <div className="flex flex-col items-center w-full gap-12 md:items-stretch md:flex-row md:justify-around">
+              {renderAboutUs}
+            </div>
           </div>
         </div>
         <picture className="hidden md:flex">
-          <source media="(max-width: 799px)" srcSet={MountainBackMobile} />
-          <source media="(min-width: 800px)" srcSet={MountainBack} />
+          <source media="(min-width: 800px)" srcSet={Family} />
           <img
-            src={MountainBack}
+            src={Family}
             alt="mountain background"
-            className="h-[900px] md:h-[550px] object-cover"
+            className="object-cover h-[800px] w-screen"
             width="100%"
             height="100%"
           />
@@ -330,7 +329,7 @@ const Landing = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;

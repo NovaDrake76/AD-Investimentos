@@ -1,7 +1,7 @@
-import React from "react"
-import { FaMedal, FaUserGraduate } from "react-icons/fa"
-import { MdSecurity } from "react-icons/md"
-import { IoRocketSharp } from "react-icons/io5"
+import React from "react";
+import { FaMedal, FaUserGraduate } from "react-icons/fa";
+import { MdSecurity } from "react-icons/md";
+import { IoRocketSharp } from "react-icons/io5";
 
 const advantages = [
   {
@@ -25,10 +25,10 @@ const advantages = [
   {
     name: "Velocidade",
     description:
-      "Seu especialista estará constantemente analisando o mercado, sugerindo ajustes que precisam ser feitos para caanhar as melhores oportunidades do mercado.",
+      "Seu assessor estará analisando o mercado e sugerindo ajustes que precisa serem feitos para que você possa aproveitar as melhores oportunidades em investimentos.",
     icon: IoRocketSharp,
   },
-]
+];
 
 export default function Advantages() {
   return advantages.map((advantage, index) => {
@@ -48,6 +48,6 @@ export default function Advantages() {
           {advantage.description}
         </span>
       </div>
-    )
-  })
+    );
+  });
 }
