@@ -1,14 +1,14 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import MountainBack from "../../images/backMountain.webp";
-import MountainBackMobile from "../../images/backMountainMobile.webp";
+import React from "react"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from "react-responsive-carousel"
+import MountainBack from "../../images/backMountain.webp"
+import MountainBackMobile from "../../images/backMountainMobile.webp"
 // import History from "../../images/history.webp"
-import BackgroundVideo from "../../components/video";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import Advantages from "./advantages";
-import Cards from "./cards";
-import Structure from "./structure";
+import BackgroundVideo from "../../components/video"
+import { AiOutlineWhatsApp } from "react-icons/ai"
+import Advantages from "./advantages"
+import Cards from "./cards"
+import Structure from "./structure"
 
 import {
   about,
@@ -16,20 +16,47 @@ import {
   advisors,
   messages,
   carouselImages,
-} from "./landingInfo";
+} from "./landingInfo"
 
 let renderCarouselImages,
   renderAboutUs,
   renderAdvisors,
   renderMessages,
-  renderContact;
+  renderContact
 
 const Landing = () => {
   renderCarouselImages = carouselImages.map((item) => {
     return (
       <div key={item.image}>
-        <div className="absolute flex items-center justify-center w-full h-full">
+        <div className="absolute flex flex-col items-center w-full h-full bg-[#000000]/40">
           {item.content}
+          {item.ButtonChange ? (
+            <div className="flex items-end self-end justify-end mb-20 mr-20">
+              <a
+                href="https://api.whatsapp.com/send?phone=5567993466245"
+                target="_blank"
+                rel="noreferrer"
+                className="hidden md:flex"
+              >
+                <button className="flex text-white bg-adblue border-2 gap-3 border-adblue font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-white hover:bg-white hover:text-adblue transition-all duration-500 ease-in-out">
+                  <AiOutlineWhatsApp /> Fale com um especialista AD
+                </button>
+              </a>
+            </div>
+          ) : (
+            <div className="flex items-end self-end justify-end mb-20 mr-20">
+              <a
+                href="https://api.whatsapp.com/send?phone=5567993466245"
+                target="_blank"
+                rel="noreferrer"
+                className="hidden md:flex"
+              >
+                <button className="flex  text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
+                  <AiOutlineWhatsApp /> Fale com um especialista AD
+                </button>
+              </a>
+            </div>
+          )}
         </div>
         <picture>
           <source media="(max-width: 799px)" srcSet={item.imageMobile} />
@@ -37,22 +64,22 @@ const Landing = () => {
           <img
             src={item.image}
             alt="Mountain Background"
-            className="min-w-screen"
+            className="md:h-screen aspect-video min-w-screen"
             width="100%"
             height="100%"
           />
         </picture>
       </div>
-    );
-  });
+    )
+  })
 
   renderAboutUs = about.map((item, index) => {
     return (
       <div
         key={index}
-        className="flex p-5 justify-center items-center bg-white w-[280px]"
+        className="flex flex-col p-2 justify-center items-center bg-white w-[280px]"
       >
-        <div className="w-20 h-20 text-[#2C2F33]">
+        <div className="w-20 h-20 text-[#2C2F33] flex justify-center">
           <item.Icon className="text-6xl" />
         </div>
         <div className="flex flex-col items-center gap-4">
@@ -63,8 +90,8 @@ const Landing = () => {
           </span>
         </div>
       </div>
-    );
-  });
+    )
+  })
 
   renderContact = contacts.map((contact, index) => {
     return (
@@ -82,8 +109,8 @@ const Landing = () => {
           {contact.name}
         </span>
       </div>
-    );
-  });
+    )
+  })
 
   renderAdvisors = advisors.map((advisor, index) => {
     return (
@@ -102,8 +129,8 @@ const Landing = () => {
           {advisor.description}
         </p>
       </div>
-    );
-  });
+    )
+  })
 
   renderMessages = messages.map((message, index) => {
     return (
@@ -131,8 +158,8 @@ const Landing = () => {
           </div>
         </div>
       </div>
-    );
-  });
+    )
+  })
 
   function renderOurTitle(our, title) {
     return (
@@ -142,7 +169,7 @@ const Landing = () => {
         </span>
         <span className="text-5xl font-['Oswald'] font-bold">{title}</span>
       </div>
-    );
+    )
   }
 
   return (
@@ -154,12 +181,14 @@ const Landing = () => {
         showArrows={false}
         infiniteLoop={true}
         showThumbs={false}
+        transitionTime={1000}
+        animationHandler="fade"
         className="flex border-b-8 border-adblue"
       >
         {renderCarouselImages}
       </Carousel>
       <div className="flex justify-center mt-20">
-        <div id="vantagens" className="flex flex-col w-full max-w-6xl gap-14">
+        <div id="vantagens" className="flex flex-col w-full max-w-6xl gap-28">
           {renderOurTitle("NOSSAS", "VANTAGENS")}
           <div className="flex flex-col justify-center md:flex-row gap-9">
             <Advantages />
@@ -225,7 +254,7 @@ const Landing = () => {
               </span>
             </h2>
           </div>
-          <div className="flex flex-col items-center w-full gap-2 md:items-stretch md:flex-row md:justify-around">
+          <div className="flex flex-col items-center w-full gap-10 md:items-stretch md:flex-row md:justify-around">
             {renderAboutUs}
           </div>
         </div>
@@ -235,7 +264,7 @@ const Landing = () => {
           <img
             src={MountainBack}
             alt="mountain background"
-            className="h-[850px] md:h-[550px] object-cover"
+            className="h-[900px] md:h-[550px] object-cover"
             width="100%"
             height="100%"
           />
@@ -299,7 +328,7 @@ const Landing = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Landing;
+export default Landing
