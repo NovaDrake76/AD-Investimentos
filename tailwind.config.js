@@ -7,7 +7,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "#ffffff",
-      adblue: "#5ac6e9",
+      adblue: "#FFB600",
     },
     extend: {},
   },

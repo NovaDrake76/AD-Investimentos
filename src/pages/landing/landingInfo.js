@@ -109,7 +109,7 @@ export const carouselImages = [
             AD INVESTIMENTOS
           </span>
           <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
-            INVISTA COM A AD E CONTE COM ACOMPANHAMENTO{" "}
+            INVISTA COM A AD E CONTE COM ACOMPANHAMENTO
             <span className="text-adblue"> DIÁRIO</span> DE SUAS APLICAÇÕES
           </h2>
         </div>
@@ -123,10 +123,10 @@ export const carouselImages = [
     content: (
       <div className="flex flex-col items-center justify-center w-4/5 h-full gap-4">
         <div className="flex flex-col gap-4">
-          <span className="flex text-xl md:text-5xl text-white font-extralight text-start font-['Raleway']">
+          <span className="flex text-xl justify-center md:text-5xl text-white font-extralight font-['Raleway']">
             AD INVESTIMENTOS
           </span>
-          <h2 className="flex flex-col gap-5  text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight text-start">
+          <h2 className="flex flex-col gap-5  text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight ">
             TRANQUILIDADE PARA SUA APOSENTADORIA? INVESTIR PARA COMPRAR UMA
             CASA?
             <span className="text-adblue"> FALE CONOSCO.</span>
