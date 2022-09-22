@@ -7,10 +7,11 @@ import { AiOutlineWhatsApp } from "react-icons/ai"
 import Alvaro from "../../images/alvaro.webp"
 import Cripto from "../../images/cripto.webp"
 import CriptoMobile from "../../images/cripto.webp"
-import Equip from "../../images/equip.webp"
-import EquipMobile from "../../images/equipMobile.webp"
+// import Equip from "../../images/equip.webp"
+// import EquipMobile from "../../images/equipMobile.webp"
 import Boat from "../../images/barco.webp"
 import BoatMobile from "../../images/barco.webp"
+import Old from "../../images/old.jpg"
 
 export const about = [
   {
@@ -92,15 +93,15 @@ export const carouselImages = [
           </span>
           <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
             INVESTIR NAS MELHORES OPÇÕES DO MERCADO?
-            <span className="text-adblue"> AQUI VOCÊ PODE.</span>
+            <span className=" text-adblue"> AQUI VOCÊ PODE.</span>
           </h2>
         </div>
       </div>
     ),
   },
   {
-    image: Equip,
-    imageMobile: EquipMobile,
+    image: Old,
+    imageMobile: Old,
     ButtonChange: false,
     content: (
       <div className="flex flex-col items-center justify-center w-4/5 h-full gap-4">
@@ -109,8 +110,9 @@ export const carouselImages = [
             AD INVESTIMENTOS
           </span>
           <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
-            INVISTA COM A AD E CONTE COM ACOMPANHAMENTO
-            <span className="text-adblue"> DIÁRIO</span> DE SUAS APLICAÇÕES
+            ANALISE SUAS APLICAÇÕES BANCÁRIAS CONOSCO. DESCUBRA SE É POSSÍVEL
+            <span className=" text-adblue"> MELHORAR </span>
+            SEUS RESULTADOS.
           </h2>
         </div>
       </div>
@@ -119,7 +121,7 @@ export const carouselImages = [
   {
     image: Boat,
     imageMobile: BoatMobile,
-    ButtonChange: true,
+    ButtonChange: false,
     content: (
       <div className="flex flex-col items-center justify-center w-4/5 h-full gap-4">
         <div className="flex flex-col gap-4">
@@ -129,7 +131,7 @@ export const carouselImages = [
           <h2 className="flex flex-col gap-5  text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight ">
             TRANQUILIDADE PARA SUA APOSENTADORIA? INVESTIR PARA COMPRAR UMA
             CASA?
-            <span className="text-adblue"> FALE CONOSCO.</span>
+            <span className=" text-adblue">FALE CONOSCO.</span>
           </h2>
         </div>
       </div>

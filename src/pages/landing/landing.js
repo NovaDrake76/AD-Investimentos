@@ -194,7 +194,7 @@ const Landing = () => {
             <Advantages />
           </div>
           <div id="produtos" className="flex flex-col gap-6">
-            {renderOurTitle("NOSSOS", "PRODUTOS")}
+            {renderOurTitle("COMO", "TRABALHAMOS")}
             <div className="flex flex-col gap-5 md:flex-row">
               <Cards />
             </div>
@@ -206,7 +206,7 @@ const Landing = () => {
         </div>
       </div>
       <div className="flex justify-center mt-14">
-        <div className="absolute flex justify-center  gap-4 p-4 md:gap-14 h-[650px] w-full bg-[#000000]/60">
+        <div className="absolute flex justify-center  gap-4 p-4 md:gap-14 h-[650px] w-full bg-[#000000]/70">
           <div className="flex flex-col items-start max-w-[1100px] gap-4 h-2/4 mt-14">
             <h2 className="text-2xl md:text-[52px] font-bold font-['Oswald'] text-white leading-tight text-start">
               <span>ACOMPANHAMENTO DOS SEUS INVESTIMENTOS</span>

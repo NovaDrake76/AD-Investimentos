@@ -1,44 +1,39 @@
-import React from "react";
-import Card1 from "../../images/card1.webp";
-import Card2 from "../../images/card2.webp";
+import React from "react"
+// import Card1 from "../../images/card1.webp"
+// import Card2 from "../../images/card2.webp"
+import Timeline from "../../images/timeline.png"
 
-export const cards = [
-  {
-    name: "Análise das Aplicações ",
-    description:
-      "Analise suas aplicações em outros bancos sem custo, e descubra se é possível melhorar seus resultados.",
-    image: Card1,
-  },
-  {
-    name: "Assessoria de Investimentos",
-    description:
-      "Recomendação das melhores aplicações do mercado, visando melhorar os resultados e ajudar os clientes a ganharem mais.",
-    image: Card2,
-  },
-];
+// export const cards = [
+//   {
+//     name: "Atendimento Personalizado com o Assessor!",
+//     description:
+//       "Recomendação das melhores aplicações do mercado, visando melhorar os resultados e ajudar os clientes a ganharem mais.",
+//     image: Card2,
+//   },
+//   {
+//     name: "Análise de Investimentos ",
+//     description:
+//       "Analise suas aplicações bancárias sem custo conosco. Descubra se é possível melhorar seus resultados, quais as taxas pagas, entre outros.",
+//     image: Card1,
+//   },
+// ]
 
 export default function Cards() {
-  return cards.map((card, index) => {
-    return (
-      <div key={index} className="flex flex-col gap-5 md:flex-row">
-        <div className="flex items-center justify-center ">
-          <img
-            src={card.image}
-            alt={card.name}
-            className="object-cover px-4 h-52 md:h-72 lg:px-0"
-            width="100%"
-            height="100%"
-          />
-        </div>
-        <div className="flex flex-col p-4 gap-5 md:max-w-[260px] ">
-          <h3 className="text-2xl text-[#262626] font-['Oswald'] md:text-start">
-            {card.name}
-          </h3>
-          <span className="text-lg font-semibold font-['Raleway'] text-[#4c4c4c] md:text-start">
-            {card.description}
-          </span>
-        </div>
-      </div>
-    );
-  });
+  return (
+    <div className="flex flex-col gap-4 divide-y divide-[#707070]/50 p-2">
+      <img src={Timeline} alt="timeline" className="hidden md:true" />
+      <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-3xl px-5">
+        Coletamos suas informações, suas necessidades atuais, seus desejos, onde
+        você gosta de aplicar e por quanto tempo deseja aplicar.
+      </p>
+      <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-3xl px-5">
+        Desenvolvemos um planejamento personalizado para você, seguindo seus
+        desejos e necessidades atuais. Estando de acordo, fazemos as aplicações.
+      </p>
+      <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-3xl px-5">
+        A AD irá acompanhar as aplicações diariamente e mantê-lo informado
+        através do whatsapp ou algum meio de contato de sua preferência.
+      </p>
+    </div>
+  )
 }

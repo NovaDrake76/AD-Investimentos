@@ -1,6 +1,6 @@
-import React from "react";
-import Logo from "../images/logo3.webp";
-import Guide from "../images/guide.webp";
+import React from "react"
+import Logo from "../images/logo3.webp"
+import Guide from "../images/guide.webp"
 
 const links = [
   {
@@ -8,7 +8,7 @@ const links = [
     href: "#vantagens",
   },
   {
-    name: "Produtos",
+    name: "Como Trabalhamos",
     href: "#produtos",
   },
   {
@@ -23,7 +23,7 @@ const links = [
     name: "Contatos",
     href: "#contatos",
   },
-];
+]
 
 const Navbar = () => {
   return (
@@ -49,7 +49,7 @@ const Navbar = () => {
           {links.map((link) => (
             <a
               key={link.name}
-              className="transition-all hover:text-adblue"
+              className="transition-all hover:text-adblue hover:border-b-2 hover:border-adblue le"
               href={link.href}
             >
               {link.name}
@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
