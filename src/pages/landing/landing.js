@@ -1,26 +1,27 @@
-import React from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from "react-responsive-carousel"
-import Family from "../../images/family.jpg"
+import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import Family from "../../images/family.jpg";
 // import History from "../../images/history.webp"
-import Handshake from "../../images/handshake.png"
-import BackgroundVideo from "../../components/video"
-import LandingVideo from "../../components/landingVideo"
-import Logo from "../../images/logo2.webp"
-import { AiOutlineWhatsApp } from "react-icons/ai"
-import Advantages from "./advantages"
-import Cards from "./cards"
-import Structure from "./structure"
+import Handshake from "../../images/handshake.png";
+import BackgroundVideo from "../../components/video";
+import LandingVideo from "../../components/landingVideo";
+import Logo from "../../images/logo2.webp";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import Advantages from "./advantages";
+import Cards from "./cards";
+import Structure from "./structure";
 
 import {
   about,
   contacts,
   advisors,
   messages,
+  reviews,
   // carouselImages,
-} from "./landingInfo"
+} from "./landingInfo";
 
-let renderAboutUs, renderAdvisors, renderMessages, renderContact
+let renderAboutUs, renderAdvisors, renderReviews, renderMessages, renderContact;
 
 const ADHelp = [
   <span>
@@ -34,7 +35,7 @@ const ADHelp = [
     AQUI VOCÊ<span className="text-adblue"> CONSEGUE.</span>
   </span>,
   <img src={Logo} alt="AD Investimentos" className="w-60 h-60" />,
-]
+];
 
 const Landing = () => {
   renderAboutUs = about.map((item, index) => {
@@ -54,8 +55,8 @@ const Landing = () => {
           </span>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   renderContact = contacts.map((contact, index) => {
     return (
@@ -73,8 +74,8 @@ const Landing = () => {
           {contact.name}
         </span>
       </div>
-    )
-  })
+    );
+  });
 
   renderAdvisors = advisors.map((advisor, index) => {
     return (
@@ -93,8 +94,29 @@ const Landing = () => {
           {advisor.description}
         </p>
       </div>
-    )
-  })
+    );
+  });
+
+  renderReviews = reviews.map((review, index) => {
+    return (
+      <div
+        key={index}
+        className="flex flex-col items-center w-[550px] min-h-[280px] shadow-lg gap-4 mt-6  p-4 rounded border-t-4 border-t-adblue transition-all duration-400 hover:shadow-2xl hover:-mt-[1px]"
+      >
+        <div className="flex flex-col items-center justify-start w-full gap-1">
+          <span className="font-['Raleway'] font-bold text-xl text-[#4c4c4c]">
+            {review.name}
+          </span>
+          <span className="font-['Raleway']  text-[#616060]">
+            {review.office}
+          </span>
+        </div>
+        <p className="font-['Raleway']  leading-7  text-[#4d4d4d] text-start">
+          {review.description}
+        </p>
+      </div>
+    );
+  });
 
   renderMessages = messages.map((message, index) => {
     return (
@@ -122,8 +144,8 @@ const Landing = () => {
           </div>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   function renderOurTitle(our, title) {
     return (
@@ -133,7 +155,7 @@ const Landing = () => {
         </span>
         <span className="text-5xl font-['Oswald'] font-bold">{title}</span>
       </div>
-    )
+    );
   }
 
   return (
@@ -163,7 +185,7 @@ const Landing = () => {
                   </h2>
                 </div>
               </div>
-            )
+            );
           })}
         </Carousel>
       </div>
@@ -207,23 +229,29 @@ const Landing = () => {
 
       <div className="flex justify-center mt-20">
         <div className="flex flex-col w-full max-w-6xl gap-8">
-          {renderOurTitle("SOBRE", "NÓS")}
-          <div className="flex flex-col md:flex-row">
-            <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-2xl px-5">
-              Hoje cuidamos do patrimônio de incontáveis famílias na cidade de
-              três lagoas e região. Possuímos mais de 5 anos de experiência
-              atendendo o público alta renda, com nossos assessores com
-              passagens por bancos comerciais e bancos de investimentos. Iremos
-              atendê-lo da melhor forma possível e analisar suas aplicações
-              diariamente, para que possamos melhorar seus resultados e garantir
-              a sua satisfação.
-            </p>
-            <div className=" justify-end flex p-2 -mt-[100px] ">
-              <img
-                src={Handshake}
-                alt="Business man shaking hands with woman at office "
-                className="max-h-[500px] rounded  object-cover "
-              />
+          {renderOurTitle("OPINIÃO DOS", "CLIENTES")}
+          <div className="flex flex-wrap items-start justify-around gap-10">
+            {renderReviews}
+          </div>
+          <div className="flex flex-col gap-4 mt-14">
+            {renderOurTitle("SOBRE", "NÓS")}
+            <div className="flex flex-col md:flex-row">
+              <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-2xl px-5">
+                Hoje cuidamos do patrimônio de incontáveis famílias na cidade de
+                três lagoas e região. Possuímos mais de 5 anos de experiência
+                atendendo o público alta renda, com nossos assessores com
+                passagens por bancos comerciais e bancos de investimentos.
+                Iremos atendê-lo da melhor forma possível e analisar suas
+                aplicações diariamente, para que possamos melhorar seus
+                resultados e garantir a sua satisfação.
+              </p>
+              <div className=" justify-end flex p-2 md:-mt-[100px] ">
+                <img
+                  src={Handshake}
+                  alt="Business man shaking hands with woman at office "
+                  className="max-h-[500px] rounded  object-cover "
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -314,7 +342,7 @@ const Landing = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;

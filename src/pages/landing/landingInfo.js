@@ -1,17 +1,17 @@
-import { FaHandshake } from "react-icons/fa"
-import { MdTimeline, MdOutlineMailOutline } from "react-icons/md"
-import { RiMoneyDollarCircleLine } from "react-icons/ri"
-import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs"
-import { AiOutlineWhatsApp } from "react-icons/ai"
+import { FaHandshake } from "react-icons/fa";
+import { MdTimeline, MdOutlineMailOutline } from "react-icons/md";
+import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
-import Alvaro from "../../images/alvaro.webp"
-import Cripto from "../../images/cripto.webp"
-import CriptoMobile from "../../images/cripto.webp"
+import Alvaro from "../../images/alvaro.webp";
+import Cripto from "../../images/cripto.webp";
+import CriptoMobile from "../../images/cripto.webp";
 // import Equip from "../../images/equip.webp"
 // import EquipMobile from "../../images/equipMobile.webp"
-import Boat from "../../images/barco.webp"
-import BoatMobile from "../../images/barco.webp"
-import Old from "../../images/old.jpg"
+import Boat from "../../images/barco.webp";
+import BoatMobile from "../../images/barco.webp";
+import Old from "../../images/old.jpg";
 
 export const about = [
   {
@@ -30,7 +30,7 @@ export const about = [
       "Mais de 300 milhões de reais assessorados em bancos comerciais e de investimentos",
     Icon: RiMoneyDollarCircleLine,
   },
-]
+];
 
 export const contacts = [
   {
@@ -58,7 +58,7 @@ export const contacts = [
     icon: BsInstagram,
     link: "https://www.instagram.com/adinvestimentos.oficial/",
   },
-]
+];
 
 export const advisors = [
   {
@@ -67,7 +67,73 @@ export const advisors = [
     description:
       "Assessor de investimentos com mais de 5 anos trabalhando no mercado financeiro. Formado em Ciências Contábeis. Pós graduado em Administração de Empresas. Trabalhou em bancos comerciais e bancos de investimento, atendendo o público alta renda. Atualmente proprietário da AD Investimentos na cidade de Três Lagoas-MS.",
   },
-]
+];
+
+export const reviews = [
+  {
+    name: "Antônio",
+    office: "Pecuarista",
+    description: (
+      <span>
+        Conheço o Álvaro há um bom tempo, já que ele me atendia e cuidava dos
+        meus investimentos no banco onde eu aplicava. Quando ele comentou que ia
+        abrir uma empresa de assessoria, fiquei bastante animado. Ele fez um
+        <span className="font-bold text-adblue"> plano personalizado</span> para
+        mim, estou bastante{" "}
+        <span className="font-bold text-adblue"> contente</span>. Consegui fazer
+        algumas aplicações para mim e também fiz uma para a minha neta.
+      </span>
+    ),
+  },
+  {
+    name: "Sueli",
+    office: "Empresária",
+    description: (
+      <span>
+        Aplicava em vários bancos, sempre que sobrava 100, 300mil na conta da
+        empresa eu transferia e aplicava em um banco que eu tinha menos. Eu
+        fazia aplicações em 4 bancos diferentes com medo de quebrar, rsrs.
+        Marquei uma reunião na AD e acabei migrando meus investimentos para lá.
+        Tem<span className="font-bold text-adblue"> dado tudo certo </span>.
+      </span>
+    ),
+  },
+  {
+    name: "Nathan",
+    office: "Design Gráfico",
+    description: (
+      <span>
+        Cara, estou bastante
+        <span className="font-bold text-adblue"> satisfeito</span>,
+        sinceramente. Quando eu fui no banco, queria fazer algumas aplicações
+        mensais do meu salário para minha filha, e fizeram uma poupança
+        programada. Conversei na AD, fizemos algumas previdências
+        complementares. Transferi todo o dinheiro que tinha guardado na minha
+        vida e separei metade para minha esposa e metade para minha filha. Acho
+        maneiro que posso
+        <span className="font-bold text-adblue"> aplicar via aplicativo</span>
+        sempre que entra uma graninha a mais. Também deixei um dinheiro pra mim
+        em uma aplicação que resgata na hora, que nem me recomendaram. Nunca se
+        sabe né?
+      </span>
+    ),
+  },
+  {
+    name: "Gustavo",
+    office: "Advogado",
+    description: (
+      <span>
+        Eu estava deixando o dinheiro parado na conta porque não sabia o
+        dinheiro que posso ganhar investindo
+        <span className="font-bold text-adblue"> corretamente</span>. Investi na
+        AD e estou ganhando um dinheiro legal, estou muito{" "}
+        <span className="font-bold text-adblue"> feliz</span>. Pretendo comprar
+        um apartamento novo quando chegar chegar a 1 milhão e deixá-lo para meu
+        filho.
+      </span>
+    ),
+  },
+];
 
 export const messages = [
   {
@@ -78,7 +144,7 @@ export const messages = [
     time: "Agora",
     text: "Mês passado sua carteira rendeu muito bem! Também temos novas opções para otimizar seus investimentos. Vamos marcar uma reunião para amanhã às 15h? A compra da casa própria está cada vez mais próxima!",
   },
-]
+];
 
 export const carouselImages = [
   {
@@ -137,4 +203,4 @@ export const carouselImages = [
       </div>
     ),
   },
-]
+];

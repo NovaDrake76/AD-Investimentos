@@ -1,22 +1,6 @@
 import React from "react";
-// import Card1 from "../../images/card1.webp"
-// import Card2 from "../../images/card2.webp"
 import Timeline from "../../images/timeline.png";
 
-// export const cards = [
-//   {
-//     name: "Atendimento Personalizado com o Assessor!",
-//     description:
-//       "Recomendação das melhores aplicações do mercado, visando melhorar os resultados e ajudar os clientes a ganharem mais.",
-//     image: Card2,
-//   },
-//   {
-//     name: "Análise de Investimentos ",
-//     description:
-//       "Analise suas aplicações bancárias sem custo conosco. Descubra se é possível melhorar seus resultados, quais as taxas pagas, entre outros.",
-//     image: Card1,
-//   },
-// ]
 
 export default function Cards() {
   return (
