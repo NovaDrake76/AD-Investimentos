@@ -49,7 +49,7 @@ const Navbar = () => {
           {links.map((link) => (
             <a
               key={link.name}
-              className="transition-all hover:text-adblue hover:border-b-2 hover:border-adblue le"
+              className="transition-all hover:text-adblue hover:border-b-2 hover:border-adblue "
               href={link.href}
             >
               {link.name}

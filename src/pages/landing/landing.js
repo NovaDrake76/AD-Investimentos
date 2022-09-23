@@ -1,16 +1,16 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import Family from "../../images/family.jpg";
+import React from "react"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from "react-responsive-carousel"
+import Family from "../../images/family.jpg"
 // import History from "../../images/history.webp"
-import Handshake from "../../images/handshake.png";
-import BackgroundVideo from "../../components/video";
-import LandingVideo from "../../components/landingVideo";
-import Logo from "../../images/logo2.webp";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import Advantages from "./advantages";
-import Cards from "./cards";
-import Structure from "./structure";
+import Handshake from "../../images/handshake.png"
+import BackgroundVideo from "../../components/video"
+import LandingVideo from "../../components/landingVideo"
+import Logo from "../../images/logo2.webp"
+import { AiOutlineWhatsApp } from "react-icons/ai"
+import Advantages from "./advantages"
+import Cards from "./cards"
+import Structure from "./structure"
 
 import {
   about,
@@ -18,9 +18,9 @@ import {
   advisors,
   messages,
   // carouselImages,
-} from "./landingInfo";
+} from "./landingInfo"
 
-let renderAboutUs, renderAdvisors, renderMessages, renderContact;
+let renderAboutUs, renderAdvisors, renderMessages, renderContact
 
 const ADHelp = [
   <span>
@@ -34,7 +34,7 @@ const ADHelp = [
     AQUI VOCÊ<span className="text-adblue"> CONSEGUE.</span>
   </span>,
   <img src={Logo} alt="AD Investimentos" className="w-60 h-60" />,
-];
+]
 
 const Landing = () => {
   renderAboutUs = about.map((item, index) => {
@@ -54,8 +54,8 @@ const Landing = () => {
           </span>
         </div>
       </div>
-    );
-  });
+    )
+  })
 
   renderContact = contacts.map((contact, index) => {
     return (
@@ -73,8 +73,8 @@ const Landing = () => {
           {contact.name}
         </span>
       </div>
-    );
-  });
+    )
+  })
 
   renderAdvisors = advisors.map((advisor, index) => {
     return (
@@ -93,8 +93,8 @@ const Landing = () => {
           {advisor.description}
         </p>
       </div>
-    );
-  });
+    )
+  })
 
   renderMessages = messages.map((message, index) => {
     return (
@@ -122,8 +122,8 @@ const Landing = () => {
           </div>
         </div>
       </div>
-    );
-  });
+    )
+  })
 
   function renderOurTitle(our, title) {
     return (
@@ -133,12 +133,12 @@ const Landing = () => {
         </span>
         <span className="text-5xl font-['Oswald'] font-bold">{title}</span>
       </div>
-    );
+    )
   }
 
   return (
     <div className="flex flex-col ">
-      <div className="absolute h-[700px]  bg-[#000000]/40 w-screen md:w-[99.1vw]">
+      <div className="absolute h-[700px] bg-[#000000]/40 w-screen md:w-[98.9vw]">
         <Carousel
           autoPlay={true}
           interval={4000}
@@ -155,7 +155,7 @@ const Landing = () => {
             return (
               <div
                 key={index}
-                className="flex  h-full justify-center items-center"
+                className="z-10 flex items-center justify-center h-full"
               >
                 <div className="flex flex-col  h-[700px] justify-center items-center gap-4  max-w-5xl">
                   <h2 className="text-4xl p-3 md:p-0 md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
@@ -163,7 +163,7 @@ const Landing = () => {
                   </h2>
                 </div>
               </div>
-            );
+            )
           })}
         </Carousel>
       </div>
@@ -229,7 +229,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="flex justify-center  mt-14">
+      <div className="flex justify-center mt-14">
         <div className="md:absolute md:bg-[#000000]/60 w-full h-[800px] flex justify-center items-center">
           <div className="flex flex-col max-w-4xl gap-8">
             <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight ">
@@ -314,7 +314,7 @@ const Landing = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Landing;
+export default Landing
