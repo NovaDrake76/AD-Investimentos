@@ -260,7 +260,9 @@ const Landing = () => {
         <div className="md:absolute md:bg-[#000000]/60 w-full h-[800px] flex justify-center items-center">
           <div className="flex flex-col max-w-4xl gap-8">
             <h2 className="text-2xl md:text-[64px] font-bold font-['Oswald'] text-white leading-tight ">
-              <span className="text-[#000000] md:text-white">VAMOS TRAZER</span>
+              <span className="text-[#000000] md:text-white">
+                VAMOS TRAZER{" "}
+              </span>
               <span className="text-adblue">
                 SUCESSO E TRANQUILIDADE PARA SUA VIDA.
               </span>
