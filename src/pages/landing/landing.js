@@ -11,6 +11,7 @@ import { AiOutlineWhatsApp } from "react-icons/ai"
 import Advantages from "./advantages"
 import Cards from "./cards"
 import Structure from "./structure"
+import Navbar from "../../components/navbar"
 
 import {
   about,
@@ -159,7 +160,9 @@ const Landing = () => {
   }
 
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
+      <Navbar />
+
       <div className="absolute h-[700px] bg-[#000000]/40 w-screen md:w-[98.9vw]">
         <Carousel
           autoPlay={true}
@@ -213,7 +216,7 @@ const Landing = () => {
         </div>
       </div>
       <div className="flex justify-center mt-14">
-        <div className="absolute flex justify-center  gap-4 p-4 md:gap-14 h-[650px] w-full bg-[#000000]/70">
+        <div className="absolute flex justify-center gap-4 p-4 md:gap-14 h-[650px] w-full bg-[#000000]/70">
           <div className="flex flex-col items-start max-w-[1100px] gap-4 h-2/4 mt-14">
             <h2 className="text-2xl md:text-[52px] font-bold font-['Oswald'] text-white leading-tight text-start">
               <span>ACOMPANHAMENTO DOS SEUS INVESTIMENTOS</span>

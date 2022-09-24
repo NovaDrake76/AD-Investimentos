@@ -27,7 +27,7 @@ const links = [
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-center w-screen p-2 border-b-4 border-adblue">
+    <nav className="absolute z-20 flex justify-center w-screen p-2 bg-transparent">
       <div className="flex items-center justify-between w-full max-w-7xl">
         <div className="flex gap-4 divide-x divide-[#808080]/50">
           <img
@@ -45,7 +45,7 @@ const Navbar = () => {
             height="100%"
           />
         </div>
-        <div className="gap-6 text-lg font-['Raleway'] hidden md:flex text-[#4c4c4c] font-bold">
+        <div className="gap-6 text-lg font-['Raleway'] hidden md:flex text-white font-bold">
           {links.map((link) => (
             <a
               key={link.name}
