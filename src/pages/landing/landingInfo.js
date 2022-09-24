@@ -1,17 +1,17 @@
-import { FaHandshake } from "react-icons/fa";
-import { MdTimeline, MdOutlineMailOutline } from "react-icons/md";
-import { RiMoneyDollarCircleLine } from "react-icons/ri";
-import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
-import { AiOutlineWhatsApp } from "react-icons/ai";
+import { FaHandshake } from "react-icons/fa"
+import { MdTimeline, MdOutlineMailOutline } from "react-icons/md"
+import { RiMoneyDollarCircleLine } from "react-icons/ri"
+import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs"
+import { AiOutlineWhatsApp } from "react-icons/ai"
 
-import Alvaro from "../../images/alvaro.webp";
-import Cripto from "../../images/cripto.webp";
-import CriptoMobile from "../../images/cripto.webp";
+import Alvaro from "../../images/alvaro.webp"
+import Cripto from "../../images/cripto.webp"
+import CriptoMobile from "../../images/cripto.webp"
 // import Equip from "../../images/equip.webp"
 // import EquipMobile from "../../images/equipMobile.webp"
-import Boat from "../../images/barco.webp";
-import BoatMobile from "../../images/barco.webp";
-import Old from "../../images/old.jpg";
+import Boat from "../../images/barco.webp"
+import BoatMobile from "../../images/barco.webp"
+import Old from "../../images/old.jpg"
 
 export const about = [
   {
@@ -30,7 +30,7 @@ export const about = [
       "Mais de 300 milhões de reais assessorados em bancos comerciais e de investimentos",
     Icon: RiMoneyDollarCircleLine,
   },
-];
+]
 
 export const contacts = [
   {
@@ -58,16 +58,16 @@ export const contacts = [
     icon: BsInstagram,
     link: "https://www.instagram.com/adinvestimentos.oficial/",
   },
-];
+]
 
 export const advisors = [
   {
     name: "Álvaro Dias",
     image: Alvaro,
     description:
-      "Assessor de investimentos com mais de 5 anos trabalhando no mercado financeiro. Formado em Ciências Contábeis. Pós graduado em Administração de Empresas. Trabalhou em bancos comerciais e bancos de investimento, atendendo o público alta renda. Atualmente proprietário da AD Investimentos na cidade de Três Lagoas-MS.",
+      "Assessor de investimentos com mais de 5 anos de mercado financeiro. Formado em Ciências Contábeis, com pós em Administração de Empresas. Trabalhou em bancos comerciais e bancos de investimento, atendendo o público alta renda. Atualmente proprietário da AD Investimentos em Três Lagoas.",
   },
-];
+]
 
 export const reviews = [
   {
@@ -133,7 +133,7 @@ export const reviews = [
       </span>
     ),
   },
-];
+]
 
 export const messages = [
   {
@@ -144,7 +144,7 @@ export const messages = [
     time: "Agora",
     text: "Mês passado sua carteira rendeu muito bem! Também temos novas opções para otimizar seus investimentos. Vamos marcar uma reunião para amanhã às 15h? A compra da casa própria está cada vez mais próxima!",
   },
-];
+]
 
 export const carouselImages = [
   {
@@ -203,4 +203,4 @@ export const carouselImages = [
       </div>
     ),
   },
-];
+]
