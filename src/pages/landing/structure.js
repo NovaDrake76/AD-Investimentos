@@ -6,9 +6,8 @@ import e2 from "../../images/escritorio/2.webp"
 import e3 from "../../images/escritorio/3.webp"
 import e4 from "../../images/escritorio/4.webp"
 import e5 from "../../images/escritorio/5.webp"
-import e6 from "../../images/escritorio/6.webp"
 
-let carouselImages = [e1, e2, e3, e4, e5, e6]
+let carouselImages = [e1, e2, e3, e4, e5]
 
 let renderCarouselImages = carouselImages.map((item) => {
   return (
