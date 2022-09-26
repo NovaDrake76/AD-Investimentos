@@ -1,9 +1,9 @@
-import React from "react";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
-import Logo from "../images/logo2.webp";
-import Guide from "../images/guide.webp";
+import React from "react"
+import { MdOutlineMailOutline } from "react-icons/md"
+import { AiOutlineWhatsApp } from "react-icons/ai"
+import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs"
+import Logo from "../images/logo2.webp"
+import Guide from "../images/guide.webp"
 
 const social = [
   {
@@ -21,7 +21,7 @@ const social = [
     icon: BsInstagram,
     link: "https://www.instagram.com/adinvestimentos.oficial/",
   },
-];
+]
 
 const contact = [
   {
@@ -34,13 +34,13 @@ const contact = [
     icon: MdOutlineMailOutline,
     link: "mailto: alvaro@adinvestimentos.com.br",
   },
-];
+]
 
 const Footer = () => {
   return (
     <footer className="flex w-screen p-8 border-t-4 border-[#202737] bg-[#0D131D] justify-center text-white">
       <div className="flex flex-col w-full max-w-7xl ">
-        <div className="flex justify-around flex-col md:flex-row">
+        <div className="flex flex-col justify-around md:flex-row">
           <div className="flex flex-col md:border-t-[1px] md:border-white w-[250px] lg:w-[350px] gap-2">
             <span className="mt-8 text-lg font-['Raleway']  text-start font-bold">
               ACESSE
@@ -50,8 +50,7 @@ const Footer = () => {
                 key={index}
                 href={contact.link}
                 target="_blank"
-                rel="noreferrer"
-                className="flex items-center hover:text-adblue transition-all "
+                className="flex items-center transition-all hover:text-adblue "
               >
                 <contact.icon className="mr-2" />
                 <span>{contact.name}</span>
@@ -67,8 +66,7 @@ const Footer = () => {
                 key={index}
                 href={contact.link}
                 target="_blank"
-                rel="noreferrer"
-                className="flex items-center hover:text-adblue transition-all"
+                className="flex items-center transition-all hover:text-adblue"
               >
                 <contact.icon className="mr-2" />
                 <span className="text-start">{contact.name}</span>
@@ -84,7 +82,7 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-between gap-3 mt-8 flex-col md:flex-row">
+        <div className="flex flex-col justify-between gap-3 mt-8 md:flex-row">
           <p className="mt-5 text-sm text-start max-w-[600px] lg:max-w-[800px]">
             A AD Investimentos é uma empresa de agentes autônomos de
             investimento devidamente registrada na comissão de valores
@@ -122,7 +120,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

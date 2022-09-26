@@ -64,8 +64,8 @@ const Landing = () => {
       <div key={index} className="flex flex-col items-center gap-1">
         <a
           href={contact.link}
+          //eslint-disable-next-line
           target="_blank"
-          rel="noreferrer"
           aria-label={contact.name}
           className="flex items-center justify-center w-20 h-20 rounded-full bg-[#EDEDED]  hover:text-adblue text-[#2C2F33] transition-all duration-400"
         >
@@ -163,7 +163,7 @@ const Landing = () => {
     <div className="flex flex-col">
       <Navbar />
 
-      <div className="absolute h-[700px] bg-[#000000]/40 w-screen md:w-[98.9vw]">
+      <article className="absolute h-[700px] bg-[#000000]/40 w-screen md:w-[98.9vw]">
         <Carousel
           autoPlay={true}
           interval={4000}
@@ -191,7 +191,7 @@ const Landing = () => {
             )
           })}
         </Carousel>
-      </div>
+      </article>
       <LandingVideo />
       {/* <div className="flex flex-col">
         <BackgroundVideo className="absolute" />
@@ -236,7 +236,7 @@ const Landing = () => {
           <div className="flex flex-wrap items-start justify-around gap-10">
             {renderReviews}
           </div>
-          <div className="flex flex-col gap-4 mt-14">
+          <article className="flex flex-col gap-4 mt-14">
             {renderOurTitle("SOBRE", "NÓS")}
             <div className="flex flex-col md:flex-row">
               <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-2xl px-5">
@@ -252,10 +252,12 @@ const Landing = () => {
                   src={Handshake}
                   alt="Business man shaking hands with woman at office "
                   className="max-h-[500px] rounded  object-cover "
+                  width="100%"
+                  height="100%"
                 />
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
 
@@ -334,8 +336,8 @@ const Landing = () => {
           </div>
           <a
             href="https://api.whatsapp.com/send?phone=5567993466245"
+            //eslint-disable-next-line
             target="_blank"
-            rel="noreferrer"
           >
             <button className="flex text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
               <AiOutlineWhatsApp /> Fale com um especialista AD

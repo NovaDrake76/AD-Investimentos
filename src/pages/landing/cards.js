@@ -1,11 +1,16 @@
-import React from "react";
-import Timeline from "../../images/timeline.png";
-
+import React from "react"
+import Timeline from "../../images/timeline.png"
 
 export default function Cards() {
   return (
-    <div className="flex  ">
-      <img src={Timeline} alt="timeline" className="hidden md:flex" />
+    <div className="flex ">
+      <img
+        src={Timeline}
+        alt="timeline"
+        className="hidden md:flex"
+        width="100%"
+        height="100%"
+      />
       <div className="flex md:hidden flex-col gap-4 divide-y divide-[#707070]/50 p-2">
         <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-3xl px-5">
           Coletamos suas informações, suas necessidades atuais, seus desejos,
@@ -22,5 +27,5 @@ export default function Cards() {
         </p>
       </div>
     </div>
-  );
+  )
 }
