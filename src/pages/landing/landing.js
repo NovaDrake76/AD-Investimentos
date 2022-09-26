@@ -326,13 +326,13 @@ const Landing = () => {
       >
         <div className="flex flex-col items-center justify-between w-full max-w-6xl gap-2 md:flex-row">
           <div className="flex flex-col text-white text-start">
-            <h3 className="font-['Raleway'] font-medium  md:text-lg">
+            <span className="font-['Raleway'] font-medium  md:text-lg">
               Pare de esperar
-            </h3>
+            </span>
 
-            <h3 className="font-['Raleway']  text-lg md:text-3xl">
+            <span className="font-['Raleway']  text-lg md:text-3xl">
               Aplique seu dinheiro conosco agora mesmo!
-            </h3>
+            </span>
           </div>
           <a
             href="https://api.whatsapp.com/send?phone=5567993466245"
