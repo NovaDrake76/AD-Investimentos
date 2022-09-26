@@ -64,8 +64,8 @@ const Landing = () => {
       <div key={index} className="flex flex-col items-center gap-1">
         <a
           href={contact.link}
-          //eslint-disable-next-line
           target="_blank"
+          rel="noopener"
           aria-label={contact.name}
           className="flex items-center justify-center w-20 h-20 rounded-full bg-[#EDEDED]  hover:text-adblue text-[#2C2F33] transition-all duration-400"
         >
@@ -336,8 +336,8 @@ const Landing = () => {
           </div>
           <a
             href="https://api.whatsapp.com/send?phone=5567993466245"
-            //eslint-disable-next-line
             target="_blank"
+            rel="noopener"
           >
             <button className="flex text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
               <AiOutlineWhatsApp /> Fale com um especialista AD
