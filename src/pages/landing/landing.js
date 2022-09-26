@@ -65,7 +65,7 @@ const Landing = () => {
         <a
           href={contact.link}
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
           aria-label={contact.name}
           className="flex items-center justify-center w-20 h-20 rounded-full bg-[#EDEDED]  hover:text-adblue text-[#2C2F33] transition-all duration-400"
         >
@@ -337,7 +337,7 @@ const Landing = () => {
           <a
             href="https://api.whatsapp.com/send?phone=5567993466245"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             <button className="flex text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
               <AiOutlineWhatsApp /> Fale com um especialista AD
