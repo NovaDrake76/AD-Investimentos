@@ -50,6 +50,7 @@ const Footer = () => {
                 key={index}
                 href={contact.link}
                 target="_blank"
+                rel="noreferrer"
                 className="flex items-center transition-all hover:text-adblue "
               >
                 <contact.icon className="mr-2" />
@@ -66,6 +67,7 @@ const Footer = () => {
                 key={index}
                 href={contact.link}
                 target="_blank"
+                rel="noreferrer"
                 className="flex items-center transition-all hover:text-adblue"
               >
                 <contact.icon className="mr-2" />
