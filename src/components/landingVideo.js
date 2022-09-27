@@ -1,5 +1,5 @@
 import React from "react";
-import Cell from "../images/video1.mp4";
+import Cell from "../images/video2.mp4";
 
 export default function BackgroundVideo() {
   return (

@@ -1,17 +1,17 @@
-import React from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from "react-responsive-carousel"
-import Family from "../../images/family.jpg"
+import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import Family from "../../images/family.jpg";
 // import History from "../../images/history.webp"
-import Handshake from "../../images/handshake.png"
-import BackgroundVideo from "../../components/video"
-import LandingVideo from "../../components/landingVideo"
-import Logo from "../../images/logo2.webp"
-import { AiOutlineWhatsApp } from "react-icons/ai"
-import Advantages from "./advantages"
-import Cards from "./cards"
-import Structure from "./structure"
-import Navbar from "../../components/navbar"
+import Handshake from "../../images/handshake.png";
+import BackgroundVideo from "../../components/video";
+import LandingVideo from "../../components/landingVideo";
+import Logo from "../../images/logo2.webp";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import Advantages from "./advantages";
+import Cards from "./cards";
+import Structure from "./structure";
+import Navbar from "../../components/navbar";
 
 import {
   about,
@@ -20,23 +20,31 @@ import {
   messages,
   reviews,
   // carouselImages,
-} from "./landingInfo"
+} from "./landingInfo";
 
-let renderAboutUs, renderAdvisors, renderReviews, renderMessages, renderContact
+let renderAboutUs, renderAdvisors, renderReviews, renderMessages, renderContact;
 
 const ADHelp = [
   <span>
     COMO A <span className="text-adblue">AD INVESTIMENTOS</span> PODE AJUDÁ-LO A
     REALIZAR SEUS SONHOS?
   </span>,
-  "INVESTIR NAS MELHORES OPÇÕES DO MERCADO?",
-  "TRANQUILIDADE PARA A SUA APOSENTADORIA?",
-  "INVESTIR PARA A COMPRA DE UM IMÓVEL?",
   <span>
-    AQUI VOCÊ<span className="text-adblue"> CONSEGUE.</span>
+    INVESTIR NAS <span className="text-adblue"> MELHORES OPÇÕES</span> DO
+    MERCADO?
+  </span>,
+  <span>
+    UMA <span className="text-adblue">EQUIPE </span>TRABALHANDO PARA VOCÊ?
+  </span>,
+  <span>
+    UM ESPECIALISTA CUIDANDO DO SEU{" "}
+    <span className="text-adblue">PATRIMÔNIO PROFISSIONALMENTE</span>?
+  </span>,
+  <span>
+    AQUI NA<span className="text-adblue"> AD</span> INVESTIMENTOS VOCÊ CONSEGUE.
   </span>,
   <img src={Logo} alt="AD Investimentos" className="w-60 h-60" />,
-]
+];
 
 const Landing = () => {
   renderAboutUs = about.map((item, index) => {
@@ -56,8 +64,8 @@ const Landing = () => {
           </span>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   renderContact = contacts.map((contact, index) => {
     return (
@@ -75,8 +83,8 @@ const Landing = () => {
           {contact.name}
         </span>
       </div>
-    )
-  })
+    );
+  });
 
   renderAdvisors = advisors.map((advisor, index) => {
     return (
@@ -95,8 +103,8 @@ const Landing = () => {
           {advisor.description}
         </p>
       </div>
-    )
-  })
+    );
+  });
 
   renderReviews = reviews.map((review, index) => {
     return (
@@ -116,8 +124,8 @@ const Landing = () => {
           {review.description}
         </p>
       </div>
-    )
-  })
+    );
+  });
 
   renderMessages = messages.map((message, index) => {
     return (
@@ -145,8 +153,8 @@ const Landing = () => {
           </div>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   function renderOurTitle(our, title) {
     return (
@@ -156,7 +164,7 @@ const Landing = () => {
         </span>
         <span className="text-5xl font-['Oswald'] font-bold">{title}</span>
       </div>
-    )
+    );
   }
 
   return (
@@ -188,7 +196,7 @@ const Landing = () => {
                   </h2>
                 </div>
               </div>
-            )
+            );
           })}
         </Carousel>
       </article>
@@ -346,7 +354,7 @@ const Landing = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;
