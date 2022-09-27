@@ -1,5 +1,6 @@
 import React from "react";
 import Cell from "../images/video1.mp4";
+import Thumb from "../images/thumb.webp";
 
 export default function BackgroundVideo() {
   return (
@@ -9,6 +10,8 @@ export default function BackgroundVideo() {
         autoPlay
         muted
         className="object-cover w-screen min-h-[700px] md:h-[550px]  z-[-1]"
+        controls
+        poster={Thumb}
       >
         <source src={Cell} type="video/mp4" />
       </video>
