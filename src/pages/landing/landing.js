@@ -2,11 +2,9 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Family from "../../images/family.jpg";
-// import History from "../../images/history.webp"
 import Handshake from "../../images/handshake.png";
 import BackgroundVideo from "../../components/video";
 import LandingVideo from "../../components/landingVideo";
-import Logo from "../../images/logo2.webp";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import Advantages from "./advantages";
 import Cards from "./cards";
@@ -41,9 +39,12 @@ const ADHelp = [
     <span className="text-adblue">PATRIMÔNIO PROFISSIONALMENTE</span>?
   </span>,
   <span>
-    AQUI NA<span className="text-adblue"> AD</span> INVESTIMENTOS VOCÊ CONSEGUE.
+    AQUI NA<span className="text-adblue"> AD</span> INVESTIMENTOS VOCÊ CONSEGUE!
   </span>,
-  <img src={Logo} alt="AD Investimentos" className="w-60 h-60" />,
+  <span>
+    GANHE DINHEIRO DE VERDADE AQUI.{" "}
+    <span className="text-adblue">SATISFAÇÃO GARANTIDA!</span>
+  </span>,
 ];
 
 const Landing = () => {
@@ -188,12 +189,24 @@ const Landing = () => {
             return (
               <div
                 key={index}
-                className="z-10 flex items-center justify-center h-full"
+                className="z-10 flex flex-col items-center justify-center h-full"
               >
                 <div className="flex flex-col  h-[700px] justify-center items-center gap-4  max-w-5xl">
                   <h2 className="text-4xl p-3 md:p-0 md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
                     {item}
                   </h2>
+                  <div className="flex items-end self-end justify-end mt-40">
+                    <a
+                      href="https://api.whatsapp.com/send?phone=5567993466245"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hidden md:flex"
+                    >
+                      <button className="flex  text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
+                        <AiOutlineWhatsApp /> Fale com um especialista AD
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             );
@@ -223,7 +236,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-14">
+      <div className="flex justify-center mt-32">
         <div className="absolute flex justify-center gap-4 p-4 md:gap-14 h-[650px] w-full bg-[#000000]/70">
           <div className="flex flex-col items-start max-w-[1100px] gap-4 h-2/4 mt-14">
             <h2 className="text-2xl md:text-[52px] font-bold font-['Oswald'] text-white leading-tight text-start">
