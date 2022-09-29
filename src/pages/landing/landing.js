@@ -172,7 +172,7 @@ const Landing = () => {
     <div className="flex flex-col">
       <Navbar />
 
-      <article className="absolute h-[700px] bg-[#000000]/40 w-screen md:w-[98.9vw]">
+      <article className="absolute flex justify-center items-center h-[700px] bg-[#000000]/40 w-screen md:w-[98.9vw]">
         <Carousel
           autoPlay={true}
           interval={4000}
@@ -184,6 +184,7 @@ const Landing = () => {
           transitionTime={2000}
           swipeable={false}
           animationHandler="fade"
+          className="absolute flex justify-center align-center"
         >
           {ADHelp.map((item, index) => {
             return (
@@ -195,23 +196,23 @@ const Landing = () => {
                   <h2 className="text-4xl p-3 md:p-0 md:text-[64px] font-bold font-['Oswald'] text-white leading-tight">
                     {item}
                   </h2>
-                  <div className="flex items-end self-end justify-end mt-40">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=5567993466245"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="hidden md:flex"
-                    >
-                      <button className="flex  text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
-                        <AiOutlineWhatsApp /> Fale com um especialista AD
-                      </button>
-                    </a>
-                  </div>
                 </div>
               </div>
             );
           })}
         </Carousel>
+        <div className="z-30 flex self-end justify-end w-full mb-20 mr-40">
+          <a
+            href="https://api.whatsapp.com/send?phone=5567993466245"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden md:flex"
+          >
+            <button className="flex  text-white border-2 gap-3 border-white font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out hover:shadow-[0px_0px_20px]">
+              <AiOutlineWhatsApp /> Fale com um especialista AD
+            </button>
+          </a>
+        </div>
       </article>
       <LandingVideo />
       {/* <div className="flex flex-col">
