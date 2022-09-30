@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../images/logo3.webp";
+import Logo from "../images/logo2.webp";
 import Guide from "../images/guide.webp";
 import { Link } from "react-router-dom";
 
@@ -45,7 +45,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between w-full max-w-7xl">
         <Link to="/">
-          <div className="flex flex-col gap-2 divide-y divide-[#808080]/50">
+          <div className="flex  gap-2 divide-x divide-[#808080]/50">
             <img
               src={Logo}
               alt="Logo AD Investimentos"

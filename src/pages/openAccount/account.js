@@ -7,9 +7,9 @@ const Landing = () => {
   return (
     <div className="flex flex-col">
       <Navbar />
-      <div className="flex flex-col-reverse items-start justify-end w-screen h-screen gap-2 md:items-center md:justify-center md:flex-row">
+      <div className="flex flex-col-reverse items-start justify-end w-screen h-screen md:h-[60vh] gap-2 md:items-center md:justify-center md:flex-row">
         <div className="flex flex-col gap-4 mb-2">
-          <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-2xl px-5">
+          <p className="text-start text-2xl font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-2xl px-5">
             Abra sua conta agora na corretora Guide e tenha acesso a nossa
             assessoria personalizada. Basta clicar no botão abaixo, preencher
             suas informações e você terá sua conta de investimentos pronta.
@@ -24,13 +24,15 @@ const Landing = () => {
             </button>
           </a>
         </div>
-        <img
-          src={Happy}
-          alt="Happy man using a notebook"
-          className="max-w-[500px] rounded  object-cover  p-2"
-          width="100%"
-          height="100%"
-        />
+        <div className="rounded">
+          <img
+            src={Happy}
+            alt="Happy man using a notebook"
+            className="max-w-[500px] rounded  object-cover p-2"
+            width="100%"
+            height="100%"
+          />
+        </div>
       </div>
     </div>
   );

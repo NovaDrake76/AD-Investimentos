@@ -2,7 +2,7 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Family from "../../images/family.jpg";
-import Handshake from "../../images/handshake.png";
+// import Handshake from "../../images/handshake.png";
 import BackgroundVideo from "../../components/video";
 import LandingVideo from "../../components/landingVideo";
 import { AiOutlineWhatsApp } from "react-icons/ai";
@@ -258,7 +258,7 @@ const Landing = () => {
           <div className="flex flex-wrap items-start justify-around gap-10">
             {renderReviews}
           </div>
-          <article className="flex flex-col gap-4 mt-14">
+          {/* <article className="flex flex-col gap-4 mt-14">
             {renderOurTitle("SOBRE", "NÓS")}
             <div className="flex flex-col md:flex-row">
               <p className="text-start text-lg font-['Raleway'] text-[#4c4c4c] font-bold leading-8 max-w-2xl px-5">
@@ -279,7 +279,7 @@ const Landing = () => {
                 />
               </div>
             </div>
-          </article>
+          </article> */}
         </div>
       </div>
 
