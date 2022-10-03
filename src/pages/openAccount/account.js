@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-import Navbar from "../../components/navbar";
-import Happy from "../../images/happy.webp";
+import Navbar from "../../components/navbar"
+import Happy from "../../images/happy.webp"
 
 const Landing = () => {
   return (
@@ -20,7 +20,7 @@ const Landing = () => {
             rel="noreferrer"
           >
             <button className="flex ml-4 border-2 gap-3  font-['Raleway'] font-medium items-center py-4 px-3 text-lg hover:border-adblue hover:text-adblue transition-all duration-500 ease-in-out">
-              Abra uma Conta
+              Clique aqui para abrir sua conta
             </button>
           </a>
         </div>
@@ -35,7 +35,7 @@ const Landing = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Landing;
+export default Landing
