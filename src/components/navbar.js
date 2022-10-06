@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import Logo from "../images/logo2.webp";
-import Guide from "../images/guide.webp";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react"
+import Logo from "../images/logo2.webp"
+import Guide from "../images/guide.webp"
+import { Link } from "react-router-dom"
 
 const links = [
   {
@@ -24,16 +24,16 @@ const links = [
     name: "Contatos",
     href: "#contatos",
   },
-];
+]
 
 const Navbar = () => {
-  const [isConta, setIsConta] = useState(false);
+  const [isConta, setIsConta] = useState(false)
 
   useEffect(() => {
     if (window.location.pathname === "/conta") {
-      setIsConta(true);
+      setIsConta(true)
     }
-  }, []);
+  }, [])
 
   return (
     <nav
@@ -76,12 +76,12 @@ const Navbar = () => {
             to={"/conta"}
             className="transition-all hover:text-adblue hover:border-b-2 hover:border-adblue "
           >
-            Abra uma Conta
+            Abra sua Conta
           </Link>
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
