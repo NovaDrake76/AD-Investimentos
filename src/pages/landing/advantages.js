@@ -44,7 +44,7 @@ export default function Advantages() {
           {advantage.name}
         </span>
         <div className="flex bg-adblue w-[50px] h-[1px]" />
-        <span className="text-lg font-semibold font-['Raleway'] text-[#4c4c4c] ">
+        <span className="text-lg font-semibold font-['Raleway'] text-[#4c4c4c] text-center">
           {advantage.description}
         </span>
       </div>

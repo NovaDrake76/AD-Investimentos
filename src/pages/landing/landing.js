@@ -61,7 +61,7 @@ const Landing = () => {
         <div className="flex flex-col items-center gap-4">
           <span className="font-['Oswald'] text-3xl">+{item.Number}</span>
           <div className="flex bg-adblue w-[50px] h-[1px]" />
-          <span className="font-['Raleway'] font-bold text-lg">
+          <span className="font-['Raleway'] font-bold text-lg text-center">
             {item.Description}
           </span>
         </div>
@@ -173,7 +173,7 @@ const Landing = () => {
     <div className="flex flex-col">
       <Navbar />
 
-      <article className="absolute flex justify-center items-center h-[700px] bg-[#000000]/40 w-screen md:w-[98.9vw]">
+      <article className="absolute flex justify-center items-center h-[700px] bg-[#000000]/40 w-screen md:w-full">
         <Carousel
           autoPlay={true}
           interval={4000}
